@@ -1,0 +1,1739 @@
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('proximanova-regular_0-webfont.eot');
+    src: url('proximanova-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-regular_0-webfont.woff') format('woff'),
+         url('proximanova-regular_0-webfont.ttf') format('truetype'),
+         url('proximanova-regular_0-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('proximanova-bold_0-webfont.eot');
+    src: url('proximanova-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-bold_0-webfont.woff') format('woff'),
+         url('proximanova-bold_0-webfont.ttf') format('truetype'),
+         url('proximanova-bold_0-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('proximanova-light_0-webfont.eot');
+    src: url('proximanova-light_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light_0-webfont.woff') format('woff'),
+         url('proximanova-light_0-webfont.ttf') format('truetype'),
+         url('proximanova-light_0-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'MyriadPro-Regular';
+		src: url('myriadproregular.eot');
+		src: url('myriadproregular.eot?#iefix') format('embedded-opentype'),
+				 url('myriadproregular.woff') format('woff'),
+				 url('myriadproregular.ttf') format('truetype'),
+				 url('myriadproregular.svg#myriadproregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: bold;
+  font-size: 11px;
+  font-family:'proxima_nova_rgregular';
+}
+	
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #999999;
+  font-weight: bold;
+  font-size: 11px;
+  font-family:'proxima_nova_rgregular';
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #999999;
+  font-weight: bold;
+  font-size: 11px;
+  font-family:'proxima_nova_rgregular';
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #999999;
+  font-weight: bold;
+  font-size: 11px;
+  font-family:'proxima_nova_rgregular';
+}
+
+.span-telemed-signup input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+	color:#666666;
+	font-size: 12px;
+	font-weight:normal;
+	font-family:'proxima_nova_rgregular';
+}
+
+.span-telemed-signup input:-moz-placeholder, textarea:-moz-placeholder {
+	color:#666666;
+	font-size: 12px;
+	font-weight:normal;
+	font-family:'proxima_nova_rgregular';
+}
+	
+.span-telemed-signup input::-moz-placeholder, textarea::-moz-placeholder {
+	color:#666666;
+	font-size: 12px;
+	font-weight:normal;
+	font-family:'proxima_nova_rgregular';
+}
+		
+.span-telemed-signup input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color:#666666;
+	font-size: 12px;
+	font-weight:normal;
+	font-family:'proxima_nova_rgregular';
+}
+
+
+
+body {
+	margin-top: 136px;
+}
+
+.banner_container{
+	display:block;
+	background:url(../img/layout/banner_bg.jpg) repeat-x;
+	height: auto; 
+}
+
+/*--------------- subpage ---------------------*/
+	
+.subpage_banner_container{
+	display:block;
+	background:url(../img/layout/subpage_banner.jpg) center no-repeat;
+	height:300px;
+	padding-left: 20px;
+	padding-right: 20px;	
+}
+
+.subpage_banner_container h1{
+	border-bottom: 0px;
+	display:block;
+	padding:153px 0 0 0;
+	letter-spacing:1px;
+	color:#FFF;
+	font: 52px 'proxima_nova_rgbold';	
+}
+
+#page-content{
+	padding: 20px;
+	background-color:#fff;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#page-content h1{
+	border-bottom:0;
+	color:#1c8cc8;
+	font: 26px 'proxima_novalight';
+	display:block;
+	line-height:20px;	
+}
+
+.span-page-content-txt{
+	padding-top: 30px;	
+}
+
+/*---- read / recipe page  ----*/
+
+#page-content .span-recipe-image{
+	width: auto;;
+	height: auto;
+}
+
+#page-content .span-recipe-name-questions{
+	width: auto;
+	height: auto;
+	margin-left:20px;
+}
+
+.span-recipe-name-questions p{
+	color:#333333;
+	font: 20px 'proxima_nova_rgregular';	
+
+}
+
+.span-recipe-name-questions .btn{
+	padding:0;
+	box-shadow:none;
+	margin:0;
+	
+	display:block;
+	width:220px;
+	height:66px;
+	float:left;
+	margin-top:15px;
+	text-decoration:none;
+	background:url(../img/layout/btn_consult.png) 0 0 no-repeat;
+}
+	
+.span-recipe-name-questions .btn-consultachef{
+	background:url(../img/layout/btn_consult.png) 0px -67px no-repeat;
+	margin-left:15px;
+}
+
+.recipe-ingredients-analysis-wrapper{
+	margin-top: 30px;	
+}
+
+.recipe-ingredients-analysis-wrapper h2{
+	color:#3296cc;
+	font: 18px 'proxima_nova_rgregular';
+	padding-bottom:10px;	
+}
+
+.recipe-ingredients-analysis-wrapper h3{
+	display:block;
+	color:#333333;
+	font: 14px 'proxima_nova_rgregular';
+	padding-top:10px;	
+}
+
+.recipe-ingredients-analysis-wrapper h4{
+	marging:0;
+	display:block;
+	color:#ff9900;
+	font: 14px 'proxima_nova_rgregular';
+	padding-top:30px;
+	padding-bottom:10px;
+	border-bottom:4px solid #e3dfdf;	
+}
+
+
+	.span-recipe-ingredients{ 
+		width: 394px; 
+	}
+	
+	.span-recipe-ingredients .btn{
+		border:0;
+		background-image:none;
+		text-shadow:none;
+		box-shadow:none;
+		width: auto;
+		height: 18px;	
+		background-color:#FF9900;
+		color: #fff;
+		font-size: 10px;
+		font-family:'MyriadPro-Regular';
+		font-weight:bold;
+	}
+	
+		table td.ingr-action{ text-align:right; }
+		table td.ingr-action .btn{ width: 93px; }
+		
+		table td.ingr-action-addol{
+			text-align: right;
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		
+		table td.ingr-action-addol .btn{ width: auto; }
+	
+		.recipe-directions{
+			display:block;
+			list-style-type:none;
+		}
+	
+		.recipe-directions li{
+			list-style-type:decimal;
+			padding-bottom:10px;
+			margin-left:16px;
+		}
+	
+	.row .span-recipe-analysis{ 
+		width: 394px;
+	}
+	
+		.references-list{
+			list-style-type:none;		
+		}
+		
+		.references-list li{
+			display:block;
+			list-style-type:none;
+			padding:15px 0 15px 0;
+			border-bottom:1px solid #e3dfdf;		
+		}
+		
+		.references-list a{
+			color:#359ad2;
+			font: 13px 'proxima_nova_rgregular';
+			text-decoration:none;
+		}
+		
+		.references-list a:hover{
+			color:#0b79b6;
+			font: 13px 'proxima_nova_rgregular';
+			text-decoration:none;
+		}
+		
+	.other-recipes{
+		padding-left: 30px;
+	}
+	
+	.other-recipes h2{
+		color:#ff9900;
+		font: 20px 'proxima_nova_rgbold';
+		padding:0 0 10px 0;
+		border-bottom:4px solid #e3dfdf;
+	}
+	
+	.other-recipes a{
+		color: #359AD2;
+		display: block;
+		font: 14px 'proxima_nova_rgregular';
+		padding-top: 5px;
+		text-decoration: none;	
+	}
+
+	.row .span-other-recipe-image{
+		margin-left:0px;
+		margin-right: 20px;
+		width: 192px;	
+	}
+	
+	.row .last{ margin-right: 0px; }
+	
+/*---- read / recipe page  end ----*/
+
+
+/*---- telemedicine page ----*/
+
+.span-telemed-video{
+	width: 540px;
+}
+
+.span-telemed-video iframe{
+	width: 100%; 	
+}
+
+.row .span-telemed-signup{
+	width: 260px;
+}
+
+	.row .input-block-level{
+		border-radius: 0;
+		box-shadow:none;
+		height: 42px;	
+		border-top: 1px solid #D8D8D8;
+		border-bottom: 1px solid #ECECEC;
+		border-left: 1px solid #E4E4E4;
+		border-right: 1px solid #E4E4E4;
+		background-color: #F0F0F0;
+	}
+	
+	.row .span-input-inline-level{
+		border-radius: 0;
+		box-shadow:none;
+		width: 111px;
+		height: 30px;
+		margin-right: 6px;
+		border-top: 1px solid #D8D8D8;
+		border-bottom: 1px solid #ECECEC;
+		border-left: 1px solid #E4E4E4;
+		border-right: 1px solid #E4E4E4;
+		background-color: #F0F0F0;
+	}
+	
+	.row .span-input-inline-level-last{ margin-right: 0px; }
+	
+	.row .btn-signup{ 
+		text-shadow:none;
+		box-shadow:0;
+		border:0;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		text-align:left;
+		width: 100%;
+		height: 66px;
+		background: #1C8DCA url(../img/layout/circle_arrow.png) 95% 50% no-repeat;
+		
+		
+	}
+	.row .btn-signup h3, 
+	.row .btn-signup h2{
+		padding:0;
+		margin:0;
+		color: #fff;
+		font-family: 'proxima_nova_rgbold';
+	}
+	
+	.row .btn-signup h2{ font-size: 30px; }
+	.row .btn-signup h3{ font-size: 12px; padding-top: 2px; }
+	
+	.span-telemids-wrapper{
+		margin-top: 36px;
+	}
+
+		.telemids{ 
+			display: block;
+			margin-left: 20px; 
+		}
+		.telemids li{
+			display: block;
+			float: left;
+			margin-right: 72px;
+			list-style:none;
+		 }
+		 
+		 .telemids li h3{
+			 display:block;
+		 	color: #333;
+			text-align: center;
+			font-weight:normal;
+			font: 16px 'proxima_nova_rgregular';
+		 }
+		 
+		.telemids a{
+			border:0;
+			padding:0;
+			box-shadow: none;
+			outline:none;
+			display: block;
+			width: 100px;
+			height: 100px;
+			margin-top: 5px;
+			text-decoration:none;
+			border-radius: 500px;
+		}
+
+		.telemids li a#med-nutrition{
+			background: #33C7C9 url(../img/layout/icon_nutrition.png) 50% 50% no-repeat;
+		}
+		
+		
+		.telemids li a#med-fitness{	
+			background: #A489D5 url(../img/layout/icon_fitness.png) 50% 50% no-repeat;
+		}
+		
+		
+		.telemids li a#med-stress{
+			background: #F9882D url(../img/layout/icon_stress.png) 50% 50% no-repeat;	
+		}
+		
+		
+		.telemids li a#med-sleep{	
+			background: #69AEB6 url(../img/layout/icon_sleep.png) 50% 50% no-repeat;
+		}
+		
+		
+		.telemids li a#med-emotion{
+			background: #C65029 url(../img/layout/icon_emotion.png) 50% 50% no-repeat;	
+		}
+		
+		.telemids li.last-meds{ margin-right: 0px; }
+		
+		.span-telemids-content { width: 100%; }
+		.row .span-telemids-content .popover{
+			box-shadow:none;
+			background-color: none;
+			border-radius: 0;
+			border:1px solid #F3F3F3;
+			display: block;
+			margin-top: 20px;
+			margin-right: 30px;
+			padding: 20px;
+			position: relative;
+			max-width: 100%;
+		}
+		
+		.row .span-telemids-content .popover-title{
+			border:0;
+			background-color: #fff;	
+			color: #33C7C9;
+			font-size:22px;
+			font-family: 'proxima_nova_rgregular'
+		}
+		
+		.row .span-telemids-content .popover-content{
+			color: #666666;
+			font-family: 'proxima_nova_rgregular';
+			font-size: 14px;
+			line-height: 20px;	
+		}
+		
+		#med-nutrition-content .arrow{ left: 8%; }
+		#med-fitness-content .arrow{ left: 29%; }
+		#med-stress-content .arrow{ left: 50%; }
+		#med-sleep-content .arrow{ left: 70%; }
+		#med-emotion-content .arrow{ left: 92%; }
+		
+		#med-nutrition-content .popover-title{ color: #33C7C9; }
+		#med-fitness-content .popover-title{ color: #A489D5; }
+		#med-stress-content .popover-title{ color: #F9882D; }
+		#med-sleep-content .popover-title{ color: #69AEB6; }
+		#med-emotion-content .popover-title{ color: #C65029; }
+		
+
+/*---- telemedicine page end ----*/
+
+/*---- shop page ----*/
+
+.span-shop-slider{
+	width: 580px;
+}
+
+	#shop-slider .btn{
+		padding-right: 10px;
+		border:0;
+		box-shadow:none;
+		text-shadow:none;
+		color: #666;
+		font: 14px 'proxima_nova_rgbold';
+		background:url(../img/layout/arrow_right.png) 100% 50% no-repeat;
+	}
+	
+	#shop-slider .carousel-caption{
+		position:absolute;
+		background: none;
+		bottom: inherit;
+		padding:0 0 0 5px;	
+		top: 43%; 
+	}
+	
+	#shop-slider .carousel-indicators{
+		position:absolute;
+		top: inherit;
+		bottom: 20px;	
+		right: 0;
+		left:15px;
+	}
+	
+	#shop-slider .carousel-indicators li{ background-color: #9B9B99; }
+	#shop-slider .carousel-indicators .active{ background-color: #F7882E; }
+
+
+.row .span-shop-menus{
+	margin-left:0px;
+	width: 250px;
+}
+
+	.row .span-shop-menu-holder{
+		margin-left:0px;
+		position: relative;
+		width: 250px;
+		height: 134px;
+		border-top: 6px solid; 
+	}
+	
+	.row #shop-recipe-menu{ border-color: #33C7C9; background: url(../img/layout/recipe-menu-image.jpg) 0 0 no-repeat; }
+	.row #shop-newarrival-menu{ border-color: #A48AD4; background: url(../img/layout/newarrivals-menu-image.jpg) 0 0 no-repeat;  }
+	.row #shop-livechat-menu{ border-color: #FA882F; background: url(../img/layout/livechat-menu-image.jpg) 0 0 no-repeat; }
+	
+	.span-shop-menu-holder .arrow {
+		position:absolute;
+		left:21px;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 11px solid #F9882C;
+	}
+	
+	#shop-recipe-menu .arrow{ 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 11px solid #33C7C9; 
+	}
+	#shop-newarrival-menu .arrow{ 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 11px solid #A48AD4; 
+	}
+	#shop-livechat-menu .arrow{ 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 11px solid #FA882F; 
+	}
+	
+	.shop-menu-txt{
+		width: auto;
+		position: absolute;
+		top:0;
+		left: 8px;
+		font-family: 'MyriadPro-Regular'; 
+	}
+	
+	.shop-menu-txt h2{ margin-bottom:6px; padding:0; font-size: 26px; color: #ff9900; }
+	.shop-menu-txt h3{ margin:0; padding:0; font-size: 16px; color: #333333; }
+	.shop-menu-txt .learnmore{ 
+		padding-right: 14px;
+		font-size: 14px; 
+		color: #666666;
+		width: auto;
+		background: url(../img/layout/arrow_right.png) 100% 50% no-repeat;
+	}
+	
+	#shop-newarrival-menu h2{ color: #333333; }
+	#shop-livechat-menu h2{ font-size:40px; }
+	
+	.row .span-shop-menu-txt{ margin-left: 0px; width:93%;  }
+	#shop-livechat-menu .shop-menu-txt a{ display: block; width:100%; height: 100px;  }
+	#shop-livechat-menu .shop-menu-txt a:hover{ text-decoration:none; }
+	
+	
+	.shoph2-heading{
+		padding-top: 25px;
+		padding-bottom: 15px;
+    	color: #FF9900;
+    	font: 20px 'proxima_nova_rgbold';
+		border-bottom: 4px solid #E3DFDF;
+	}
+	
+	.recproducts-wrapper{ margin-top: 20px; }
+	
+	.row .span-recproduct-holder{
+		margin-left: 24px;
+		margin-right:0px;
+		width: 190px;
+	}
+	
+		.span-product-detail h3{
+			margin-top:0;
+			text-align:center;
+			font-weight:normal;
+			color: #333;
+			font:13px 'proxima_nova_rgregular'
+		}
+		
+		.span-product-detail h3 a{ color: #333; }
+		
+			.price-addtocart{
+				padding: 5px 0;
+				border-top: 1px solid #E3DFDF;	
+				border-bottom: 1px solid #E3DFDF;	
+				color: #666666;
+				font: 12px 'proxima_nova_rgbold';
+  			}
+			
+			.price-addtocart a{ color: #ff9900;	font: 10px 'proxima_nova_rgbold' }
+			.price-addtocart span{ padding: 0 13px; }
+			.price-addtocart span.addtocart{ border-left: 1px solid #E3DFDF; }
+
+/*---- article page ----*/
+
+#recproducts-slider .span-recproduct-holder{
+	margin-left: 80px;
+	margin-right:0px;
+	width: 190px; 
+	
+}
+
+#recproducts-slider h1{ 
+	margin:0;
+	text-align:center; 
+	font-weight:normal;
+	line-height: 12px;
+	text-transform:none;
+}
+	
+#recproducts-slider h1 a{ 
+	color: #333; 
+	font-size:13px;
+	font-family: 'proxima_nova_rgregular';
+}
+
+#recproducts-slider .price-addtocart span{
+	padding: 0 20px;
+}
+
+#recproducts-slider .carousel-control{
+	background: #FF9900;	
+	opacity: 1;
+	width: 33px;
+	height: 33px;
+	outline:none;
+}
+
+#recproducts-slider .carousel-control.left{
+	background: #FF9900 url(../img/layout/cc_arrow-white-left.png) 50% 50% no-repeat; 	
+}
+
+#recproducts-slider .carousel-control.right{
+	background: #FF9900 url(../img/layout/cc_arrow-white-right.png) 60% 50% no-repeat; 	
+}
+
+#page-content .span-recipe-name-questions h1{ 
+	margin:0;
+	text-transform:none;
+	max-width: 460px;
+}
+
+#article-image-name-wrapper .btn{
+	float: none;
+    border: 0 none;
+    height: 41px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+	padding-left:12px;
+	margin-bottom: 10px;
+    text-align: left;
+    text-shadow: none;
+    width: 258px;
+	background: #1C8DCA url("../img/layout/circle_arrow.png") no-repeat 95% 50% ;
+}
+
+#article-image-name-wrapper .btn-booknow h3, 
+#article-image-name-wrapper .btn-booknow h2{
+	color: #FFFFFF;
+    font-family: 'proxima_nova_rgbold';
+    margin: 0;
+    padding: 0;
+}
+
+#article-image-name-wrapper .btn-booknow h2{ font-size: 32px; }
+#article-image-name-wrapper .btn-booknow h3{ font-size: 12px; padding-top: 5px; }
+
+#article-image-name-wrapper .sm-links label{ display: block; float: left; padding-top: 3px; }
+#article-image-name-wrapper .sm-links a{
+	width: 26px;
+	height: 26px;
+	display:block;
+	float:left;
+	margin-left: 10px;
+	background:url(../img/layout/sn_icon_green.png) 0 0 no-repeat;
+}
+
+#article-image-name-wrapper .sm-links a#twitterlink{
+	background-position: 0 -31px;
+}
+
+#article-image-name-wrapper p{
+	font-size: 13px;
+	color: #666;
+	line-height: 9px;
+}
+
+
+/*---- article landing page ----*/
+
+#page-content .span-article-features-slider h1{
+	color: #333333;
+	font: 20px 'proxima_nova_rgbold';
+	padding-bottom: 15px;
+	border-bottom: 4px solid #E3DFDE;	
+}
+
+.row .span-article-features-slider{
+	width: 96%;
+	margin-bottom: 20px;
+}
+
+.span-article-features-slider .carousel-caption{
+	width: 452px;	
+	height: 100%;
+	bottom: inherit;
+	left:inherit;
+	top:0;
+	right: 0; 
+	padding:0;
+	background: #fff;
+}
+
+#article-features-slider .carousel-caption h1{ 
+	border-bottom: none; 
+	margin: 0 0 10px 0;
+	padding:0;
+	color: #1c8cc8;
+	font: 26px 'proxima_nova_rgregular';
+}
+
+.span-article-features-slider .carousel-caption h4, 
+.span-article-features-slider .carousel-caption p{
+	color: #666666;
+	font-size: 12px;
+	font-family: 'proxima_nova_rgregular';
+}
+
+.span-article-features-slider .carousel-caption .lead{
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 30px; 
+}
+
+.span-article-features-slider .carousel-indicators{ top: -45px; right:0; }
+.span-article-features-slider .carousel-indicators li{ margin-left: 10px; background-color: #E1E0DE; }
+.span-article-features-slider .carousel-indicators .active{ background-color: #2F97CC; }
+
+.span-article-features-slider .btn{
+	display: block;
+	background: none;
+	box-shadow:none;
+	border:0;
+	position:absolute;
+	bottom:0;
+	padding-left:0px;
+	padding-right: 35px;
+	text-shadow:none;	
+	text-align:left;
+	color: #999;
+	font: 14px 'proxima_nova_rgbold';
+	background: url(../img/layout/circle_arrow2.png) 100% 50% no-repeat;
+}
+
+.span-article-features-slider .btn:hover{ text-decoration:underline; }
+
+
+#page-content .span-article-recent h1{
+	margin: 0;	
+	border-bottom: 4px solid #E3DFDE;
+    color: #333333;
+    font: 20px 'proxima_nova_rgbold';
+    
+}
+
+#page-content .span-article-detail h1{
+	margin: 0;	
+	padding:0;
+	border-bottom:0;
+	color: #1c8cc8;
+	font: 18px 'proxima_nova_rgregular';
+}
+
+.row .span-article-recent{ width: 96%;  }
+
+.article-holder{
+	width: 100%;
+	padding: 40px 0;
+	border-bottom: 1px solid #E1DFE0;
+	
+}
+
+.row .span-article-img{ 
+	margin-left: 0px;
+}
+
+.row .span-article-detail{
+	position:relative;
+	width: 534px;
+	height: 179px;
+	margin-left: 20px; 
+}
+
+	.span-article-detail p{
+		line-height:20px;
+		color: #666666;
+		font-size: 12px;
+		font-family: 'proxima_nova_rgregular';
+	}
+	
+	.span-article-detail .lead{
+		font-size: 13px;	
+	}
+	
+	.span-article-detail .btn{
+		background: none;
+		box-shadow:none;
+		border:0;
+		position:absolute;
+		bottom:0;
+		padding-left:0px;
+		padding-right: 35px;
+		text-shadow:none;	
+		text-align: left;
+		color: #999;
+		font: 10px 'proxima_nova_rgbold';
+	}
+	
+	.span-article-detail .btn:hover{ text-decoration:underline; }
+	
+	.last-article{ border-bottom: none; }
+	
+	.pagination{ 
+		position:relative; 
+		height: 32px;  
+	}
+	.pagination ul{
+		border-radius: 0;
+		box-shadow: none;	
+		position:absolute;
+		left: 35%;
+		
+	}
+	
+	.pagination ul > li > a,
+	.pagination ul > li > span {
+	  padding: 3px 12px;
+	  border: 1px solid #fff;
+	  background-color: #F0F0F0;
+	  color: #666;
+	  font-size: 14px;
+	  font-family: 'proxima_nova_rgbold';
+	}
+	
+	.pagination ul > li > a:hover,
+	.pagination ul > li > a:focus,
+	.pagination ul > .active > a,
+	.pagination ul > .active > span {
+	  background-color: #0381CB;
+	   color: #fff;
+	}
+
+	.pagination ul > .active > a,
+	.pagination ul > .active > span {
+	  color: #fff;
+	  cursor: default;
+	}
+	
+	.pagination ul > li .prev{ padding: 3px 30px; text-indent: -999999px; background: #F0F0F0 url(../img/layout/prev-btn.png) 50% 50% no-repeat; }
+	.pagination ul > li .next{ padding: 3px 30px; text-indent: -999999px;  background: #F0F0F0 url(../img/layout/next-btn.png) 50% 50% no-repeat; }
+	
+	.pagination ul > li .prev:hover{ text-indent: -999999px; background: #0382C7 url(../img/layout/prev-btn-hover.png) 50% 50% no-repeat; }
+	.pagination ul > li .next:hover{ text-indent: -999999px;  background: #0382C7 url(../img/layout/next-btn-hover.png) 50% 50% no-repeat; }
+	
+
+/*---- article landing page end ----*/
+
+/*---- product detail page ------------*/
+
+.row .span-product-image{
+	width: 220px;	
+	margin-left: 57px;
+}
+
+.span-product-info{
+	width: 523px;	
+}
+
+.row .span-product-info .span2{ 
+	width: 142px; 
+}
+
+.span-product-info .tab-content{
+	margin-bottom: 10px;
+	height:180px;
+
+}
+
+.span-product-info .btn{
+	background: none;
+	border:0;
+	box-shadow: none;
+	text-shadow:none;
+	color: #666666;
+	
+}
+
+#page-content .span-product-image h1{
+	margin:0;
+	padding:0;
+	text-transform: none;	
+	text-align:center;
+	font-size: 20px;
+}
+
+.row .span-qty-cart-holder{ 
+	margin-left: 0;  
+	font-size: 13px; 
+}
+	
+	.span-qty-cart-holder .btn-addcart{
+		padding-top: 8px;
+		width: 118px;
+		height: 22px;
+		color: #fff;	
+		background-color:#FF9900;
+		font: 14px 'proxima_nova_rgbold';
+	}
+		
+
+.span-purchase-delivery-holder label{
+	display:inline-block;
+	padding: 0 10px;
+	margin: 0;
+	font-size: 13px;
+}
+
+.span-purchase-delivery-holder input{
+	margin-bottom: 5px;	
+}
+
+.bootstrap-select{
+	border-radius: 0;
+	background-color:#F0F0F0;
+	border-top: 1px solid #D4D4D4;
+	border-left: 1px solid #E7E7E7;
+	border-right: 1px solid #E7E7E7;
+}
+	
+.bootstrap-select .dropdown-menu{ 
+	border-radius:0; 
+	box-shadow: none;
+	border-top: 0;
+	
+}
+
+.bootstrap-select .caret{
+	border: 0;
+	width: 22px;
+	height: 22px;
+	top: 3px;	
+	background: url(../img/layout/dropdown-caret.png) 0 0 no-repeat;
+}
+
+.bootstrap-select .btn .caret{ margin-top:0px; }
+.bootstrap-select.btn-group .btn .caret{ right: 3px; }
+.bootstrap-select.btn-group.open .btn.dropdown-toggle{ background-color:#F0F0F0; }
+.bootstrap-select.btn-group.open .dropdown-toggle{ box-shadow: none;  }
+
+#prodTab.nav-tabs{
+	border-bottom: 0;	
+}
+	
+#prodTab.nav-tabs > li > a{
+	border:0;
+	border-radius: 0;
+	background-color:#E3DFDE;	
+	color: #666666;	
+}
+
+#prodTab.nav-tabs > li > a, 
+#prodTab.nav-pills > li > a{
+	padding-left: 29px;
+	padding-right: 29px;	
+}
+
+#prodTab.nav-tabs > .active > a, 
+#prodTab.nav-tabs > .active > a:hover, 
+#prodTab.nav-tabs > .active > a:focus{
+	border:0;
+	border-radius: 0;
+	background-color:#1C8CCB;	
+	color: #fff;
+}
+
+/*--------------- subpage end ---------------------*/
+
+.header_container{
+	display:block;
+	background:url(../img/layout/header_bg.jpg) repeat-x;
+	height:135px;
+}
+
+.main_content_container{
+	display:block;
+	padding:40px 0 40px 0;
+	position:relative;	
+}
+
+.footer_container{
+	background-color:#0f3055;
+	display:block;
+	height:auto;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+	
+	/* left menu CSS
+    -------------------------------------------------- */
+		
+	.accordion-group{ border: 0;}
+	
+	.accordion-heading .accordion-toggle{
+		text-decoration:none;
+		color:#999999;
+		padding:0 0 5px 0;
+		font:20px 'proxima_nova_rgbold';
+		background:url(../img/layout/arrow_down.png) right center no-repeat;
+	}
+	
+	.accordion-inner{ padding: 0; border-top: 0px; }
+		
+	#left_menu_wrapper li
+	{
+		display:block;
+		list-style-type:none;
+		background:#FFF;
+		width:100%;
+		height:46px;
+		margin-top:10px;
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	}
+	
+	#left_menu_wrapper li a
+	{
+		display:block;
+		width:100%;
+		height:100%;
+		padding:2px 0 0 2px;
+		text-decoration:none;
+	}
+	
+	
+	
+	span.leftmenu_icon_sleephealth
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px 0px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_nutrition
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -43px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_stress
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -86px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_exercise
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -129px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_recipes
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -172px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_cholesterol
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -215px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_heartdisease
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -258px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_hbressure
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -301px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_cancerprevention
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -344px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_sexualhealth
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -387px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_sleepdisorders
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -430px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.leftmenu_icon_others
+	{
+		background:url(../img/layout/sprite_icons.png) no-repeat;
+		background-position:0px -473px;
+		display:block;
+		height:42px;
+		width:46px;
+		float:left;
+	}
+	
+	span.left_menu_txt_wrapper
+	{
+		color:#1c8dca;
+		font:16px 'proxima_nova_rgregular';
+		padding:12px 0 0 17px;
+		float:left;
+		text-decoration:none;
+	}
+	
+	span:hover.left_menu_txt_wrapper
+	{
+		color:#666666;
+		font:16px 'proxima_nova_rgregular';
+		padding:12px 0 0 17px;
+		float:left;
+		text-decoration:none;
+	}
+	
+	/* right content CSS
+    -------------------------------------------------- */
+	
+	.featured_article_content_wrapper {
+		display:block;
+		border-bottom: 2px solid #E3DFDF;
+		margin-bottom: 40px;
+		margin-right: 30px;
+		margin-top: 26px;
+		width:100%;
+	}
+	
+	a.featured_title_link {
+		display: block;
+		text-decoration: none;
+	}
+	
+	a:hover.featured_title_link {
+		display: block;
+		text-decoration: none;
+	}
+	
+	span.featured_articles_title {
+		background: url(../img/layout/circle_arrow2.png) no-repeat scroll right center transparent;
+		color: #1C8CC8;
+		display: block;
+		font: 16px 'proxima_nova_rgregular';
+		padding: 12px 0 15px;
+		text-decoration:none;
+	}
+	span:hover.featured_articles_title{
+		background: url(../img/layout/circle_arrow2.png) no-repeat scroll right center transparent;
+		color: #333333;
+		display: block;
+		font: 16px 'proxima_nova_rgregular';
+		padding: 12px 0 15px;
+		text-decoration:none;
+	}
+	
+	span.featured_product_content_wrapper {
+		display:block;
+		margin-bottom: 20px;
+		margin-top: 26px;
+		width:100%;
+	}
+	
+	span.featured_image_wrapper {
+		height:auto;
+		background:#FFF;
+		display:block;
+		width:100%;
+	}
+	span.featured_product_title {
+		border-bottom: 1px solid #E3DFDF;
+		display: block;
+		height: 57px;
+	}
+	span.featured_product_btn_wrapper {
+		border-bottom: 1px solid #E3DFDF;
+		display: block;
+		height: 38px;
+	}
+	span.featured_product_btn_readmore {
+		border-right: 1px solid #E3DFDF;
+		float: left;
+		height: 16px;
+		margin-top: 10px;
+		width: 49%;
+	}
+	span.featured_product_btn_addtocart {
+		float: left;
+		height: 16px;
+		margin-top: 10px;
+		width: 49%;
+	}
+	
+	a.btn_readmore {
+		color: #999999;
+		display: block;
+		font: 10px 'proxima_nova_rgbold';
+		letter-spacing: 1px;
+		padding: 4px 0 0 10px;
+		text-align:center;
+		text-decoration: none;
+	}
+	a.btn_readmore:hover {
+		color: #333333;
+		display: block;
+		font: 10px 'proxima_nova_rgbold';
+		letter-spacing: 1px;
+		padding: 4px 0 0 10px;
+		text-align:center;
+		text-decoration: none;
+	}
+	a.btn_addtocart {
+		color: #FF9900;
+		display: block;
+		font: 10px 'proxima_nova_rgbold';
+		letter-spacing: 1px;
+		padding: 4px 0 0 10px;
+		text-align:center;
+		text-decoration: none;
+	}
+	a.btn_addtocart:hover {
+		color: #DA8300;
+		display: block;
+		font: 10px 'proxima_nova_rgbold';
+		letter-spacing: 1px;
+		padding: 4px 0 0 10px;
+		text-align:center;
+		text-decoration: none;
+	}
+	
+	span.featured_product_content_wrapper p {
+		color: #333333;
+		padding: 10px 10px 0;
+		text-align: center;
+	}
+
+	/* banner CSS
+    -------------------------------------------------- */
+
+	div.main_banner_wrapper
+	{
+		height:auto;
+		overflow:hidden;
+		width:100%;
+	}
+	
+	span.banner_image_holder1
+	{
+		float:left;
+		margin-top:20px;
+		height:500px;
+		width:24.9%;
+		background:url(../img/content/sample1.jpg) no-repeat;
+		border-right:1px solid #fff;
+		
+	}	
+	span.banner_link_wrapper
+	{
+		margin-top:401px;
+		display:block;
+		width:100%;
+		height:99px;
+
+	}
+	
+	a.image_title_wrapper1
+	{
+		background:url(../img/layout/green_bg.png)0 0  repeat;
+		display:block;
+		height:99px;		
+		text-decoration:none;
+	}
+	
+	span.banner_image_holder2
+	{
+		float:left;
+		margin-top:20px;
+		height:500px;
+		width:24.9%;
+		background:url(../img/content/sample2.jpg) no-repeat;
+		border-right:1px solid #fff;
+		
+	}
+	
+	a.image_title_wrapper2
+	{
+		background:url(../img/layout/purple_bg.png)0 0  repeat;
+		display:block;
+		height:99px;		
+		text-decoration:none;
+	}
+	
+	span.banner_image_holder3
+	{
+		float:left;
+		margin-top:20px;
+		height:500px;
+		width:24.9%;
+		background:url(../img/content/sample3.jpg) no-repeat;
+		border-right:1px solid #fff;
+		
+	}
+	
+	a.image_title_wrapper3{
+		background:url(../img/layout/orange_bg.png)0 0  repeat;
+		display:block;
+		height:99px;		
+		text-decoration:none;
+	}
+	
+	span.banner_image_holder4{
+		float:left;
+		margin-top:20px;
+		height:500px;
+		width:24.82%;
+		background:url(../img/content/sample4.jpg) no-repeat;
+		
+	}
+	
+	a.image_title_wrapper4{
+		background:url(../img/layout/blue_bg.png)0 0  repeat;
+		display:block;
+		height:99px;		
+		text-decoration:none;
+	}
+	
+	.title_wrapper{
+		color:#FFF;
+		font:36px 'proxima_nova_rgbold';
+		float:left;
+		padding:28px 0 0 10px;
+	}
+	
+	
+	
+	.arrow1{
+		width:37px;
+		height:37px;
+		float:right;
+		padding:30px 10px 0 0;		
+	}
+	
+		/*---------------- footer ----------------*/
+	
+	.border_bottom{
+		border-bottom: 1px solid #0D2948;
+	}
+	
+	span.footer_hr{
+		display:block;
+		border-bottom: 1px solid #0D2948;
+	}
+	
+	ul.nav1{
+		float: left;
+		margin-right: 90px;	
+		display: block;	
+	}
+	
+	.nav1 li{
+		list-style:none;	
+		margin-bottom: 15px;
+	}
+	
+	.nav1 li a{
+		display: block;
+		text-decoration:none;	
+		color: #fff;
+		font: 13px 'proxima_nova_rgbold';
+	}
+	
+	ul.nav2{
+		float: left;
+		display: block;	
+	}
+	
+	.nav2 li{
+		list-style:none;	
+		margin-bottom: 15px;
+	}
+	
+	.nav2 li a{
+		display: block;
+		text-decoration:none;	
+		color: #fff;
+		font: 13px 'proxima_nova_rgbold';
+	}
+	
+	.nav1 li a:hover, .nav2 li a:hover{ 
+		text-decoration: underline; 
+	}
+	
+	.footer-newsletter{
+		display:block;
+		padding: 0 10px;
+		color: #fff;
+		font:14px 'proxima_nova_rgregular';
+		width:100%;
+	}
+	
+	.footer-newsletter h3{
+		margin-top: 20px;
+		text-align:center;
+		color: #fff;
+		font:14px 'proxima_nova_rgregular';
+	}
+	
+	.footer-newsletter .field-holder{
+		position:relative; 
+		width: auto;
+		margin-left:48px;
+	}
+	
+	.footer-newsletter .field-holder .icon-email{
+		position: absolute;
+		top:8px;
+		left: 10px;
+		background: url(../img/layout/mail_icon.png) 0 0 no-repeat;	
+	}
+	
+	
+	.footer-newsletter .field-holder input{
+		width: 179px;
+		padding-left: 35px;
+		background-color: #E3E3E4;
+		color: #999999;
+		outline:none;
+		font: 11px 'proxima_nova_rgregular';
+		border:1px solid #79899C;
+		
+	}
+	
+	
+	.footer-social-media img{
+		margin: 20px 0;	
+	}
+	
+	.footer-social-media label{
+		display: block;
+		float: left;
+		padding-top: 3px;
+		color: #fff;
+		font:14px 'proxima_nova_rgbold';	
+	}
+	
+	.footer-social-media a{
+		display: block;
+		float: left;
+		width:26px;
+		height: 26px;
+		margin-left: 14px;
+		background: url(../img/layout/sprite_icons2.png) 0 0 no-repeat;
+	}
+	
+	.footer-social-media a#fblink{
+		background-position: 0 0;
+	}
+	
+	.footer-social-media a#twittlink{
+		background-position: 0 -27px;
+	}
+	
+	.footer-social-media a#ytlink{
+		background-position: 0 -54px;
+	}
+	
+	.copyright{
+		display:block;
+		padding-top:26px;
+		text-align:center;  
+		color: #0482C7;
+		font:10px 'proxima_nova_rgbold';	
+	}
+		
+	/* none css 
+	-------------------------------------------------- */
+	
+	span.noborder
+	{
+		border:none;
+	}
+	
+	span.nomargin_right {
+		margin-right: 0;
+	}
+	
+	span.noborder_bottom{
+		border-bottom:none;
+	}
+	
+	span.padding_bottom{
+		padding-bottom:15px;
+	}
+	.invisible{
+	visibility:hidden;	
+	}
+	
+/*---- added --------*/
+
+.navbar-fixed-top .navbar-inner, 
+.navbar-static-top .navbar-inner{ 
+	box-shadow: none; 
+}
+
+.navbar .brand{
+	float: none;	
+	width: auto;
+	outline:none;
+}
+
+.navbar-inverse .navbar-inner{
+	border:0;
+	background:url(../img/layout/header_bg2.jpg) 0 100% repeat-x; 
+	background-color: #fff;		
+}
+
+.navbar-inverse .brand, 
+.navbar-inverse .nav > li > a{
+	text-shadow:none;	
+	color:#666666;
+	font: bold 13px 'proxima_nova_rgregular';
+}
+
+.navbar .nav > li > a{
+	padding: 21px 36px;
+}
+
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
+  color: #1291BA;
+  border-bottom:4px solid #1291BA;
+}
+
+.navbar-inverse .nav .active > a, 
+.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a:focus{
+	background: none;
+	box-shadow:none;
+	color: #1291BA;
+	border-bottom:4px solid #1291BA;
+}
+
+.navbar-inverse .btn-navbar{
+	background-color: #2EB9E9;
+	background-image:none;	
+}
+
+.topmenu{ 
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top:-75px;
+	right:0;
+    margin-bottom: 49px;
+
+}
+
+.topmenu li{
+	display:block;
+	float:left;
+	border-left:1px solid #DADBDC;	
+}
+
+.topmenu li a{
+	display: block;	
+	color: #666666;
+	font: bold 10px 'proxima_nova_rgregular';
+	text-decoration:none;
+    padding: 10px 25px 2px 25px;
+}
+
+.topmenu li a:hover{
+	text-decoration:underline;	
+}
+
+.topmenu li#cartmenu{
+    
+    background: url(../img/layout/cart_icon.png) 12% 50% no-repeat;
+    border-right:1px solid #DADBDC;	
+}
+
+.topmenu li#cartmenu a{
+    padding-left: 35px;
+}
+
+.navbar-search div {position:relative;}
+.navbar-search em.icon-search {
+	position: absolute; 
+	left: 10px; 
+	top: 6px; 
+	cursor:pointer; 
+	text-shadow:0 1px 1px #7FA3FF;
+}
+
+.navbar-search{ 
+	float: right; 
+}
+
+.navbar-search input{ 
+	width: 	138px;
+	height: 24px; 
+	padding-left: 30px;
+}
+
+.navbar-inverse .navbar-search .search-query:focus,
+.navbar-inverse .navbar-search .search-query.focused, 
+.navbar-inverse .navbar-search .search-query { 
+	border:0; 
+	border-radius: 0;
+	box-shadow: none; 
+	padding-left: 28px; 
+	line-height: 19px; 
+	color: #999999; 
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'proxima_nova_rgregular';
+	background-color: #E3E3E4; 
+}
+
+.navbar-search .search-query{
+	border-radius: 0;
+	background-color: #E3E3E4; 
+}
+
+.navbar-inverse .navbar-search .search-query:focus,
+.navbar-inverse .navbar-search .search-query.focused {
+	background:#666666; 
+	color:#fff; 
+}
+
+.icon-search{
+	width: 16px;
+	height: 16px;
+	background: url(../img/layout/search_icon.png) 0 50% no-repeat;
+}

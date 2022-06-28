@@ -1,0 +1,65 @@
+#cs-container{
+	text-align:center; 
+	background-color: #fff;
+}
+
+#cs-content{
+	width: 630px; 
+	margin: 68px auto;
+}
+
+#cs-content h1{
+	display:block;
+	margin:0;
+	text-transform:none;
+	padding: 10px 0 0 0;
+	font-weight:normal;
+	color: #1C8CC8; 
+	font-size: 32px;
+	font-family: 'proxima_novalight'; 
+	border:0; 
+	/*background:url(../img/layout/cs-border.png) 0 100% no-repeat;	*/
+}
+
+#cs-content hr{ border:0; }
+
+#cs-content p{
+	font-size: 18px;
+	color: #333px;	
+	line-height: 26px;
+	margin-top: 30px;
+	padding: 0 50px;
+}
+
+#cs-content .input-append{
+	margin-bottom:0;
+	margin-top: 30px;	
+}
+
+#cs-content .input-append .span2{
+	width: 306px;
+	height: 30px;
+	border-radius:0;
+	background-color: #ECECEC;
+	border-top-color: #D8D8D8;
+	border-bottom-color: #ECECEC;
+	border-left-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	font-style:italic;
+	font-size: 14px;
+	color: #BEBEBE;
+}
+
+#cs-content .input-append .btn{ 
+	box-shadow: none;
+	text-shadow:none;
+	border:0;
+	border-radius:3px;
+	margin-left: 8px;
+	background: #FF9900;
+	width: 150px;
+	height: 40px;
+	color: #fff;
+	font-size: 18px;
+}
+
