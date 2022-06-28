@@ -1,0 +1,721 @@
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('../fonts/ufonts.com_futura-bold-bt-webfont.eot');
+    src: url('../fonts/ufonts.com_futura-bold-bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_futura-bold-bt-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_futura-bold-bt-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_futura-bold-bt-webfont.svg#futura_md_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/myriadpro-bold_0.eot');
+    src: url('../fonts/myriadpro-bold_0.eot') format('embedded-opentype'),
+         url('../fonts/myriadpro-bold_0.woff') format('woff'),
+         url('../fonts/myriadpro-bold_0.ttf') format('truetype'),
+         url('../fonts/myriadpro-bold_0.svg#MyriadProBold') format('svg');
+}
+
+
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/myriadproregular.eot');
+	src: url('../fonts/myriadproregular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/myriadproregular.woff') format('woff'),
+		 url('../fonts/myriadproregular.ttf') format('truetype'),
+		 url('../fonts/myriadproregular.svg#myriadproregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Myriad Pro Light";
+	src: url('../fonts/MyriadPro-Semibold.eot');
+	src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadPro-Semibold.svg#Myriad Pro Light') format('svg'),
+	url('../fonts/MyriadPro-Semibold.woff') format('woff'),
+	url('../fonts/MyriadPro-Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+body{
+
+}
+
+#nav-wrapper{
+	height: 180px;
+	padding-top: 90px;
+	background: url(../img/nav-bg.jpg) 50% 0 repeat-x;
+}
+
+#nav-wrapper .navbar-brand{
+	display: none;
+}
+
+
+#nav-wrapper .navbar{
+	background-color: transparent;
+	margin-bottom: 0; 
+	border:0;
+}
+
+#nav-wrapper .navbar-nav > li{
+	text-align:center;
+	
+}
+
+#nav-wrapper .navbar-nav > .active > a, 
+#nav-wrapper .navbar-nav > .active > a:hover, 
+#nav-wrapper .navbar-nav > .active > a:focus{
+	color: #aa3a2e;
+}
+
+#nav-wrapper .navbar-nav > li > a{
+	background-color: transparent;
+	padding: 35px 78px; /*padding: 35px 40px;*/
+	color: #073340;
+	font-size: 17px;
+	font-family: 'futura_md_btbold';
+}
+
+#nav-wrapper .logo-holder{
+	width: 226px;
+	
+	margin-right: 0;
+	margin-left: 0;
+	border:1px solid transparent;
+	
+}
+
+#nav-wrapper .navbar-nav > li.logo-holder > a{
+	position: absolute;
+	left: 0;
+	top:-92px;
+	width: 226px;
+	padding: 0; 
+	
+}
+
+.navbar-nav > li > .dropdown-menu{
+	width: 100%;
+	text-align:center;
+	background-color: #aa3a2e;
+}
+
+#nav-wrapper .nav .open > a,
+#nav-wrapper .nav .open > a:hover, 
+#nav-wrapper .nav .open > a:focus{
+	color: #aa3a2e;
+}
+
+#nav-wrapper  .dropdown-menu > li > a{
+	color: #fff;
+	font-size: 18px;
+	font-family: 'MyriadPro-Regular';
+}
+
+#nav-wrapper  .dropdown-menu > li > a:hover,
+#nav-wrapper  .dropdown-menu > li > a:focus{
+	color: #aa3a2e;
+}
+
+
+/*------------------- banner ----------------------------*/
+
+.banner-wrapper{
+	margin-top: -2px;
+	border:1px solid transparent;
+}
+
+.banner-wrapper img{
+	margin: auto;
+	border:0;
+}
+
+.banner-holder{
+	
+	
+}
+
+
+/*------------------- content ----------------------------*/
+
+.content-wrapper{
+	color: #fff;
+	/*padding: 40px 0;*/
+	background: url(../img/home-content-bg.jpg) 0 0 repeat;
+}
+
+#home-content-wrapper,
+#page-content-wrapper,
+.shop-content-wrapper{
+
+	padding: 40px 0; 	
+}
+
+.panel{
+	border-radius:0;
+	background-color: #7d1d03;
+}
+
+.panel .panel-heading{
+	border-radius:0;
+	padding: 11px 15px;
+	background: url(../img/panel-header-bg.png) 0 0 no-repeat;
+	
+}
+
+.panel .panel-heading .panel-title{
+	margin:0;
+	color: #100008;
+	font-size: 30px;
+	font-family: 'futura_md_btbold';
+}
+
+.panel .panel-body{
+	min-height: 100px;
+	color: #ebe8d5;
+	font-size: 16px;
+	font-family: 'MyriadPro-Regular';
+}
+
+.panel .panel-body h3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 40px;
+	font-family: 'futura_md_btbold';
+}
+
+.panel .panel-body .badge{
+	border-radius: 0;
+	background-color: #000;
+	padding: 10px 15px;
+	color: #f8f5e2;
+	font-size: 16px;
+	font-family: "Tahoma":
+}
+
+.panel .panel-body .thumbnail{
+	border:0;
+	border-radius:0;
+	background-color: #c46b31;
+}
+
+.panel .btn{
+	color: #000;
+	font-size: 23px;
+	font-family: 'MyriadProBold';
+	background-color: #f9c921;
+}
+
+#panel-upevents .panel-heading{
+	background: url(../img/panel-header-bg.png) 0 0 no-repeat;
+}
+
+
+.panel-home .panel-title,
+.panel-shop .panel-title,
+.panel-relprod .panel-title{
+	position:relative;
+}
+
+.panel-home .panel-title span,
+.panel-shop .panel-title span,
+.panel-relprod .panel-title span{
+	position:absolute;
+	top: 5px;
+	display:block;
+	width: 24px;
+	height:20px;
+	background: url(../img/bullet.png);
+}
+
+.panel-home .panel-title .bullet-before,
+.panel-shop .panel-title .bullet-before,
+.panel-relprod .panel-title .bullet-before{
+	left:20px;
+}
+
+.panel-home .panel-title .bullet-after,
+.panel-shop .panel-title .bullet-after,
+.panel-relprod .panel-title .bullet-after{
+	right: 20px;
+}
+
+.panel-home .panel-body{
+	-webkit-box-shadow: inset 0px 21px 12px 0px rgba(81,14,0,1);
+	-moz-box-shadow: inset 0px 21px 12px 0px rgba(81,14,0,1);
+	box-shadow: inset 0px 21px 12px 0px rgba(81,14,0,1);
+}
+
+
+/*--------------------------- about page ------------------------------*/
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border: 1px dashed white;
+ 
+  top: 50%;
+
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.panel-about .panel-body{
+	color: #ebe8d5;
+	font-size: 17px;
+	font-family: "Tahoma";
+}
+
+#panel-about-info h3{
+	margin-bottom: 10px;
+	font-size: 29px;
+	font-family: "Myriad Pro Light";
+}
+
+#panel-about-info img{
+	margin-left: 20px;
+}
+
+#panel-whatweoffer h3,
+#panel-ourplace h3,
+#panel-ourhours h3,
+#panel-manageteam h3,
+#panel-brewmasters h3{
+	margin-bottom: 40px;
+	color: #ebe8d5;
+	font-size: 29px;
+	font-family: "Myriad Pro Light";
+}
+
+#panel-whatweoffer ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+
+#panel-whatweoffer ol > li > h4{
+	font-size: 22px;
+}
+
+#panel-whatweoffer ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 6px 0; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 0 4px 110px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+}
+
+#panel-whatweoffer ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top:0;
+	left:0;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:1.8em;
+	height: 1.6em;
+	
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it */
+	margin-right:8px;
+	padding:4px;
+	color:#fff;
+	background:#501200;
+	font-size: 46px;
+	font-weight:bold;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	text-align:center;
+}
+#panel-whatweoffer li ol,
+#panel-whatweoffer li ul {margin-top:6px;}
+#panel-whatweoffer ol ol li:last-child {margin-bottom:0;}
+
+#panel-ourhours dt{
+	font-weight: normal;
+}
+
+#panel-ourplace .container{
+	
+	border:1px solid red;
+}
+	
+#panel-ourplace .row {
+	margin-left:0;
+	margin-right:0;
+}
+
+#panel-ourplace .row div{
+	padding-left:2px;
+	padding-right:2px;
+}
+
+#panel-whatweoffer .fancy span:before,
+#panel-whatweoffer .fancy span:after {
+	width: 335px;
+}
+
+#panel-ourplace .fancy span:before,
+#panel-ourplace .fancy span:after,
+#panel-ourhours .fancy span:before,
+#panel-ourhours .fancy span:after {
+	width: 370px;
+}
+
+#panel-manageteam .fancy span:before,
+#panel-manageteam .fancy span:after {
+	width: 280px;
+}
+
+#panel-brewmasters .fancy span:before,
+#panel-brewmasters .fancy span:after {
+	width: 230px;
+}
+
+.panel-staff .panel-body{
+	padding: 15px 0;
+}
+
+.panel-staff .thumbnail .caption{ 
+	color: #f4cabf;
+	font-size: 17px;
+	font-family: 'MyriadPro-Regular';
+}
+
+.panel-staff h5{
+	color: #fff;
+	font-size: 30px;
+	font-family: 'MyriadPro-Regular';
+	
+}
+
+.panel-staff .panel-body .thumbnail{
+	background-color: transparent;
+}
+
+#page-content-wrapper #staffs-container .container{
+
+	width: auto;	
+}
+
+#staffs-container{
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+
+#staffs-container .staff-holder{
+	padding-left: 4px;
+	padding-right: 4px;
+	
+}
+
+#staffs-container .staff-holder .thumbnail{
+	padding-left:0;
+	padding-right: 0;
+	
+
+}
+
+/*------------------- shop / product----------------------*/
+
+
+#items-wrapper .panel .panel-heading{
+	padding: 11px 15px;
+	-webkit-box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+	-moz-box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+	box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+}
+
+#items-wrapper .panel-body{
+	padding:0;
+}
+
+#items-wrapper .thumbnail{
+	padding:0;
+	margin-bottom: 0;
+}
+
+#items-wrapper .caption{
+	padding: 20px;
+	color: #fff;
+	background-color: #000;
+}
+
+#items-wrapper .caption h3{
+	font-size: 38px;
+}
+
+#items-wrapper .caption a{
+	padding: 20px 0;
+	color: #D93F0B;
+	font-size: 18px;
+	font-family: "Myriad Pro Light";
+	text-decoration: underline;
+}
+
+#items-wrapper .item-name-desc{
+	padding-right:0;
+	color: #5A5A5A;
+}
+
+#items-wrapper .price-addcart{
+	padding-top: 10px;
+	padding-left:0;
+	text-align: right;
+}
+
+#items-wrapper .price-addcart s{
+	font-size: 20px;
+	color: #5A5A5A;
+}
+
+#items-wrapper .price-addcart .new-price{
+	margin:0;
+	padding: 0;
+	font-size: 38px;
+	font-family: 'futura_md_btbold';
+}
+
+#items-wrapper .price-addcart a{
+	padding:0;
+	margin-top: -10px;
+	font-size: 20px;
+}
+
+#item-desc .jumbotron{
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: transparent;
+}
+
+#item-desc h1{
+	border-bottom: 5px solid #921E05;
+	color: #141319;
+	text-align:center;
+	font-size: 48px;
+	font-family: 'futura_md_btbold';
+}
+
+#item-desc p{
+	color: #7C7C7C;
+	font-size: 16px;
+	font-family: "Myriad Pro Light";
+}
+
+/*------------------- product detail ----------------------------*/
+
+#item-content-wrapper{
+	padding-top: 0;
+}
+
+.item-detail{
+	padding: 40px 0;
+	margin-bottom: 40px;
+	background-color: #fff;
+}
+
+.relprod-wrapper .panel{
+	background-color: transparent;
+}
+
+.relprod-wrapper #items-wrapper .caption{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.relprod-wrapper .panel-heading{
+	margin-bottom: 30px;
+	-webkit-box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+	-moz-box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+	box-shadow: 1px 21px 30px 0px rgba(81,15,0,1);
+}
+
+/*------------------- events ----------------------------*/
+
+#page-content-wrapper #events-container{
+	background-color: transparent;
+}
+
+#events-container .event-holder{
+
+	padding-left: 4px;
+	padding-right: 4px;	
+}
+
+.event-holder .thumbnail{
+	border:0;
+	border-radius: 0;
+	padding: 8px 11px;
+	background-color: #7E2102;
+}
+
+.event-holder .thumbnail .caption{ 
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'MyriadPro-Regular';
+}
+
+.event-holder .thumbnail .caption p{
+	text-align: justify;
+}
+
+.event-holder .thumbnail h3,
+.event-holder .thumbnail label{
+	
+	display: block;
+}
+
+.event-holder .thumbnail h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-family: "Myriad Pro Light";
+}
+
+.event-holder .thumbnail label{
+	font-weight: normal;	
+	font-size: 16px;
+}
+
+.event-holder .thumbnail .btn{
+	border-radius:0;
+	font-size: 12px;
+	color: #fff;
+	padding: 5px 20px;
+	border:1px solid #fff;
+}
+
+/*------------------- contact ----------------------------*/
+
+#page-content-wrapper #contact-map-container{
+
+	padding-left:0;
+	padding-right:0;	
+}
+
+#page-content-wrapper #contact-map-container h3{
+	margin-top:0;
+	margin-bottom:0;
+	padding : 10px 0;
+	color: #fff;
+	font-size: 32px;
+	font-family: "Myriad Pro Light";
+	background-color: #511201;
+
+}
+
+#page-content-wrapper #contact-info-container{
+	padding-top: 10px;
+	text-align: justify;
+	font-size: 17px;	
+	font-family: 'MyriadPro-Regular';
+	background-color: #7d1d03;
+}
+
+/*------------------- footer ----------------------------*/
+
+footer{
+	padding-top: 40px;
+	text-align:center;
+	min-height: 200px;
+	background-color: #651b06;
+}
+
+footer h3{
+	color: #fff;
+	font-size: 30px;
+	font-family: 'futura_md_btbold';
+} 
+
+footer #wtph{
+	margin-bottom: 20px;
+}
+
+footer label{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'MyriadPro-Regular';
+}
+
+.form-control::-moz-placeholder{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'MyriadPro-Regular';
+}
+
+footer .form-control{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'MyriadPro-Regular';
+	background-color: #672218;
+	border:1px solid #8c3b12;
+}
+
+footer input[type="text"],
+footer input[type="email"]{
+	height: 55px;
+}
+
+
+footer .throw-party{
+	width: 400px;
+	margin: auto;
+}
+
+footer .btn{
+	border:0;
+	box-shadow: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 23px;
+	font-family: "Tahoma";
+	background-color: #031e28;
+}
+
+
+.copyright{
+	padding: 20px 0 10px 0;
+	margin-top: 20px;
+	color: #b12c07;
+	font-size: 19px;
+	font-family: 'MyriadPro-Regular';
+	background-color: #2e1102;
+}
+
+footer .center-block {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+

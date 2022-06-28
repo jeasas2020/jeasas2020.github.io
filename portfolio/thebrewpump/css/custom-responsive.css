@@ -1,0 +1,191 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+	#page-content-wrapper .container{
+		width: 980px;
+		background-color:#7d1d03;
+	}
+	
+	
+
+	
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	#nav-wrapper .navbar-nav > li > a{
+		padding: 35px 54px;
+	}
+	
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#nav-wrapper .navbar-nav > li > a{
+		padding: 35px 27px;
+	}
+	
+	
+	#panel-whatweoffer .fancy span:before,
+	#panel-whatweoffer .fancy span:after {
+		width: 220px;
+		
+	}
+
+	#panel-ourplace .fancy span:before,
+	#panel-ourplace .fancy span:after,
+	#panel-ourhours .fancy span:before,
+	#panel-ourhours .fancy span:after {
+		width: 250px;
+	}
+	
+	#panel-manageteam .fancy span:before,
+	#panel-manageteam .fancy span:after {
+		width: 160px;
+	}
+	
+	#panel-brewmasters .fancy span:before,
+	#panel-brewmasters .fancy span:after {
+		width: 110px;
+	}
+
+	
+	
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+	#nav-wrapper{
+		padding: 10px 0;
+		height:auto;
+		background: url(../img/navbar-nav-bg.jpg) 0 0 repeat;
+	}
+	
+	#nav-wrapper .navbar-brand{
+		display: block;
+		padding: 0 20px;
+	}
+	
+	#nav-wrapper .logo-holder{
+		display: none;
+	}
+	
+	#nav-wrapper .navbar-nav > li{
+		text-align: left;
+	}
+	
+	#nav-wrapper .navbar-nav > li > a{
+		padding: 5px 10px;
+		
+	}
+	
+	#nav-wrapper .navbar-collapse{
+		margin-top: 20px;
+		border-color: #767779;
+		
+	}
+	
+	#nav-wrapper .dropdown-menu > li > a:hover,
+	#nav-wrapper .dropdown-menu > li > a:focus{
+		color: #aa3a2e;
+		background-color: #fff;
+	}
+
+	.navbar-nav > li > .dropdown-menu{
+		text-align: left;
+	}
+	
+	.navbar-nav .open .dropdown-menu{
+		background-color: #aa3a2e;
+	}
+	
+	#nav-wrapper .navbar-toggle{
+		border:1px solid #767779;
+	}
+	
+	#panel-whatweoffer .fancy span:before,
+	#panel-whatweoffer .fancy span:after {
+		width: 135px;
+		
+	}
+
+	#panel-ourplace .fancy span:before,
+	#panel-ourplace .fancy span:after,
+	#panel-ourhours .fancy span:before,
+	#panel-ourhours .fancy span:after {
+		width: 160px;
+	}
+	
+	#panel-manageteam .fancy span:before,
+	#panel-manageteam .fancy span:after {
+		width: 70px;
+	}
+	
+	#panel-brewmasters .fancy span:before,
+	#panel-brewmasters .fancy span:after {
+		width: 20px;
+	}
+
+	
+	
+	
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+	
+
+	.panel .panel-heading .panel-title{
+		font-size: 22px;
+	}
+	
+	.panel .panel-body h3{
+		font-size: 20px;
+	}
+	
+	.panel .panel-body{
+		font-size: 14px;
+	}
+	
+	#panel-manageteam h3, 
+	#panel-brewmasters h3{
+		font-size: 18px;
+	}
+	
+	
+	#panel-whatweoffer .fancy span:before,
+	#panel-whatweoffer .fancy span:after {
+		width: 0;
+		border:0;
+	}
+
+	#panel-ourplace .fancy span:before,
+	#panel-ourplace .fancy span:after,
+	#panel-ourhours .fancy span:before,
+	#panel-ourhours .fancy span:after {
+		width: 0;
+		border:0;
+	}
+	
+	#panel-manageteam .fancy span:before,
+	#panel-manageteam .fancy span:after {
+		width:0;
+		border:0;
+	}
+	
+	#panel-brewmasters .fancy span:before,
+	#panel-brewmasters .fancy span:after {
+		width:0;
+		border:0;
+	}
+
+	
+	
+}
