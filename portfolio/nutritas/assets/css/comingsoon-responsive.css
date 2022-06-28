@@ -1,0 +1,31 @@
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+	#cs-content{ width: 100%; }
+	
+	#cs-content p{ padding: 0 10px;  }
+	
+	#cs-content .input-append{ width: 90%; }
+	
+	#cs-content .input-append .span2{ width:50%; height: 40px;  }
+	
+}
+
+@media (max-width: 480px) {
+	#cs-content{ width: 100%; }
+	
+	#cs-content h1{font-size: 20px; }
+	
+	#cs-content p{ padding: 0 10px;  }
+	
+	#cs-content .input-append{ width: 90%; }
+	
+	#cs-content .input-append .span2{ width:100%; float: none; }
+	
+	#cs-content .input-append .btn{ width: 100%; float: none;margin:10px 0; display:block; }
+}
+
+	

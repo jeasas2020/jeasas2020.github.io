@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Right Market | Welcome...</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/headers/header1.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">        
+   <!-- CSS Implementing Plugins -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+   
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/rm.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/themes/headers/header-rm.css" id="style_color-header-1">    
+	<link rel="stylesheet" href="assets/css/themes/font-rm.css">
+	
+	<link rel="stylesheet" href="assets/css/rm_responsive.css">
+	
+</head> 
+
+<body>
+
+<!-- Script for Facebook Login button -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '189266871276044',
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the session
+    xfbml      : true  // parse XFBML
+  });
+
+  // Here we subscribe to the auth.authResponseChange JavaScript event. This event is fired
+  // for any authentication related change, such as login, logout or session refresh. This means that
+  // whenever someone who was previously logged out tries to log in again, the correct case below 
+  // will be handled. 
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+    // Here we specify what we do with the response anytime this event occurs. 
+    if (response.status === 'connected') {
+      // The response object is returned with a status field that lets the app know the current
+      // login status of the person. In this case, we're handling the situation where they 
+      // have logged in to the app.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // In this case, the person is logged into Facebook, but not into the app, so we call
+      // FB.login() to prompt them to do so. 
+      // In real-life usage, you wouldn't want to immediately prompt someone to login 
+      // like this, for two reasons:
+      // (1) JavaScript created popup windows are blocked by most browsers unless they 
+      // result from direct interaction from people using the app (such as a mouse click)
+      // (2) it is a bad experience to be continually prompted to login upon page load.
+      FB.login();
+    } else {
+      // In this case, the person is not logged into Facebook, so we call the login() 
+      // function to prompt them to do so. Note that at this stage there is no indication
+      // of whether they are logged into the app. If they aren't then they'll see the Login
+      // dialog right after they log in to Facebook. 
+      // The same caveats as above apply to the FB.login() call here.
+      FB.login();
+    }
+  });
+  };
+
+  // Load the SDK asynchronously
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+
+  // Here we run a very simple test of the Graph API after login is successful. 
+  // This testAPI() function is only called in those cases. 
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Good to see you, ' + response.name + '.');
+    });
+  }
+</script>
+
+<!--=== Header ===-->
+<div class="header">               
+    <div class="container"> 
+        <!-- Logo -->       
+        <div class="logo">                                             
+            <a href="index.html"><img id="logo-header" src="assets/img/logo.png" alt="Logo"></a>
+        </div><!-- /logo -->        
+                                    
+        <!-- Menu -->       
+        <div class="navbar">                                
+            <div class="navbar-inner">                                  
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a><!-- /nav-collapse -->                                  
+                <div class="nav-collapse collapse">                                     
+                    <ul class="nav top-2">
+                        <li class="active">
+                            <a href="home.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="application.html">APPLICATION</a>
+                        </li>
+                        <li>
+                            <a href="useful-information.html">EXTREMELY USEFUL INFORMATION</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+							<a class="contact" href="contact.html">CONTACT</a>
+                        </li>
+						<li><a class="login"><i class="icon-login login-btn">LOGIN<b class="caret"></b></i></a></li>
+						<li><a class="btn-signup hover-effect">SIGN UP</a></li>     
+                    </ul>
+					
+                    <div class="login-open">
+                        <div class="input-append">
+                            <form>
+                                <div class="control-group">
+									<div><input type="text" class="span3" id="email"  placeholder="EMAIL" /></div>
+									<div><input type="text" class="span3" id="password" placeholder="PASSWORD" /></div>
+								</div>
+								<div class="control-group clearfix" id="forgot-pass-login">
+									<a href="#" class="btn btn-link pull-left">FORGOT PASSWORD</a>
+									<button type="submit" class="btn btn-u pull-right">LOGIN</button>
+								</div>
+								
+								<div class="control-group">
+									<div class="overlap-heading"><span>OR</span></div>
+								</div>
+								
+								<div class="control-group">
+									<fb:login-button size="large" onlogin="require('./log').info('onlogin callback')">LOGIN WITH FACEBOOK</fb:login-button>
+								</div>
+                            </form>
+                        </div>
+                    </div>
+					
+                </div><!-- /nav-collapse -->                                
+            </div><!-- /navbar-inner -->
+        </div><!-- /navbar -->                          
+    </div><!-- /container -->               
+</div><!--/header -->      
+<!--=== End Header ===-->
+
+<!--=== Content Part ===-->
+
+<div class="row-fluid" id="contact-page">
+	
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOyqSJwY2gYOtLQj0aKgYnyDKDbltThR4&sensor=false" type="text/javascript"></script>
+	 <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+		var mapcenter = new google.maps.LatLng(52.562486, 0.074133);
+        var map_options = {
+          center: mapcenter,
+          zoom: 15,
+		  disableDefaultUI:true,    
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+		
+        var maps = new google.maps.Map(map_canvas, map_options)
+		
+		var marker= new google.maps.Marker({
+  		position:mapcenter,
+  		});
+		
+		marker.setMap(maps);
+		
+      }
+     google.maps.event.addDomListener(window, 'load', initialize);
+	 
+    </script>
+	
+	<div id="map_canvas" style="height:320px;">
+	
+	</div>
+	
+	<div class="container">
+		
+		<div class="headline pagination-centered"><h1>Contact Details</h1></div>
+		
+		<div class="row-fluid">
+			<div class="span4" id="location">
+				<p>15b Hostmoor Avenue</p> 
+				<p>March</p>
+				<p>Cambridgeshire</p>
+				<p>PE15 0AX</p>
+			</div>
+			<div class="span4" id="phone">
+				<p>Phone:</p> 
+				<p class="color-green">+96 032 6598</p>
+			</div>
+			<div class="span4" id="email">
+				<p>Email:</p> 
+				<p class="color-green">sales@rightmarket.com</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<div class="equifax">
+<div class="container">
+	
+		<div class="row-fluid">
+			<span><img src="assets/img/equifax.png"></span>
+			<span>&nbsp;&nbsp;Data sourced from Equifax, the worldwide leader for consumer data.&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="" class="btn-u">GET STARTED</a></span>
+		</div>
+	
+	</div>
+</div>
+
+<!--=== Footer ===-->
+<div class="footer">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span3">
+                <!-- About -->
+		        <div class="headline"><h3>CONTACT INFO</h3></div>		
+				<ul class="unstyled">
+				<li>15b Hostmoor Avenue</li>
+				<li>March</li>
+				<li>Cambridgeshire</li>
+				<li>PE15 OAX</li>
+				<li>United Kingdom</li>
+				</ul>
+				
+				<p>e: <span class="color-grey">sales@rightmarket.com</span></p>
+			</div><!--/span4-->	
+			
+			<div class="span3">
+				<div class="headline"><h3>NAVIGATION</h3></div>
+				<ul class="unstyled">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Application</a></li>
+				<li><a href="#">Data</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
+				</ul>
+			</div><!--/span4-->
+
+			<div class="span3">
+				<div class="headline"><h3>HELP &amp; ADVICE</h3></div>
+				<ul class="unstyled">
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">Acceptable Use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Cookies</a></li>
+				</ul>
+			</div><!--/span3-->
+			
+			<div class="span3">
+				<div class="headline"><h3>NEWSLETTER</h3></div>
+				<p>Register your interest and receive our newsletter</p>
+				<form class="form-inline">
+				<div class="input-append">
+					<input type="text" placeholder="Your email address" class="input-medium">
+					<button class="btn-u">Subscribe</button>
+				</div>
+				</form>			
+			</div><!--/span3-->
+			
+		</div><!--/row-fluid-->	
+	</div><!--/container-->	
+</div><!--/footer-->	
+<!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+	<div class="container">
+		<div class="row-fluid">
+
+			<div class="span8">						
+	            <p>&copy; 2013 <span class="color-green">ROI Marketing Solutions Limited</span>. All Rights Reserved.</p>
+			</div>
+			<div class="span4">	
+				<ul class="social-icons">
+                     <li><a href="#" data-original-title="Twitter" class="social_twitter">Follow us on Twitter</a></li>
+                </ul>
+			</div>
+		</div><!--/row-fluid-->
+	</div><!--/container-->	
+</div><!--/copyright-->	
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>        
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- JS Page Level -->           
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        
+		handleLogin();
+		
+		function handleLogin() {    
+			jQuery('.login').click(function () {
+				if(jQuery('.login-btn').hasClass('icon-login')){
+					jQuery('.login-open').fadeIn(500);
+					jQuery('.login-btn').removeClass('icon-login');
+					jQuery('.login-btn').addClass('icon-remove');
+				} else {
+					jQuery('.login-open').fadeOut(500);
+					jQuery('.login-btn').addClass('icon-login');
+					jQuery('.login-btn').removeClass('icon-remove');
+				}   
+			}); 
+		}
+	
+    });
+</script><!--[if lt IE 9]>
+    <script src="assets/js/respond.js"></script>
+<![endif]-->
+
+</body>
+</html> 

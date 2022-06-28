@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Right Market | Welcome...</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/headers/header1.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">        
+   <!-- CSS Implementing Plugins -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" type="text/css" media="screen">      
+    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugins/bxslider/jquery.bxslider.css">
+   
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/rm.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/themes/headers/header-rm.css" id="style_color-header-1">    
+	
+	<link rel="stylesheet" href="assets/css/themes/font-rm.css">
+	
+	<link rel="stylesheet" href="assets/css/rm_responsive.css">
+	
+</head> 
+
+<body>
+
+<!-- Script for Facebook Login button -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '189266871276044',
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the session
+    xfbml      : true  // parse XFBML
+  });
+
+  // Here we subscribe to the auth.authResponseChange JavaScript event. This event is fired
+  // for any authentication related change, such as login, logout or session refresh. This means that
+  // whenever someone who was previously logged out tries to log in again, the correct case below 
+  // will be handled. 
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+    // Here we specify what we do with the response anytime this event occurs. 
+    if (response.status === 'connected') {
+      // The response object is returned with a status field that lets the app know the current
+      // login status of the person. In this case, we're handling the situation where they 
+      // have logged in to the app.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // In this case, the person is logged into Facebook, but not into the app, so we call
+      // FB.login() to prompt them to do so. 
+      // In real-life usage, you wouldn't want to immediately prompt someone to login 
+      // like this, for two reasons:
+      // (1) JavaScript created popup windows are blocked by most browsers unless they 
+      // result from direct interaction from people using the app (such as a mouse click)
+      // (2) it is a bad experience to be continually prompted to login upon page load.
+      FB.login();
+    } else {
+      // In this case, the person is not logged into Facebook, so we call the login() 
+      // function to prompt them to do so. Note that at this stage there is no indication
+      // of whether they are logged into the app. If they aren't then they'll see the Login
+      // dialog right after they log in to Facebook. 
+      // The same caveats as above apply to the FB.login() call here.
+      FB.login();
+    }
+  });
+  };
+
+  // Load the SDK asynchronously
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+
+  // Here we run a very simple test of the Graph API after login is successful. 
+  // This testAPI() function is only called in those cases. 
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Good to see you, ' + response.name + '.');
+    });
+  }
+</script>
+
+<!--=== Header ===-->
+<div class="header">               
+    <div class="container"> 
+        <!-- Logo -->       
+        <div class="logo">                                             
+            <a href="index.html"><img id="logo-header" src="assets/img/logo.png" alt="Logo"></a>
+        </div><!-- /logo -->        
+                                    
+        <!-- Menu -->       
+        <div class="navbar">                                
+            <div class="navbar-inner">                                  
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a><!-- /nav-collapse -->                                  
+                <div class="nav-collapse collapse">                                     
+                    <ul class="nav top-2">
+                        <li class="active">
+                            <a href="home.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="application.html">APPLICATION</a>
+                        </li>
+                        <li>
+                            <a href="useful-information.html">EXTREMELY USEFUL INFORMATION</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+							<a class="contact" href="contact.html">CONTACT</a>
+                        </li>
+						<li><a class="login"><i class="icon-login login-btn">LOGIN<b class="caret"></b></i></a></li>
+						<li><a class="btn-signup hover-effect">SIGN UP</a></li>     
+                    </ul>
+					
+                    <div class="login-open">
+                        <div class="input-append">
+                            <form>
+                                <div class="control-group">
+									<div><input type="text" class="span3" id="email"  placeholder="EMAIL" /></div>
+									<div><input type="text" class="span3" id="password" placeholder="PASSWORD" /></div>
+								</div>
+								<div class="control-group clearfix" id="forgot-pass-login">
+									<a href="#" class="btn btn-link pull-left">FORGOT PASSWORD</a>
+									<button type="submit" class="btn btn-u pull-right">LOGIN</button>
+								</div>
+								
+								<div class="control-group">
+									<div class="overlap-heading"><span>OR</span></div>
+								</div>
+								
+								<div class="control-group">
+									<fb:login-button size="large" onlogin="require('./log').info('onlogin callback')">LOGIN WITH FACEBOOK</fb:login-button>
+								</div>
+                            </form>
+                        </div>
+                    </div>
+					
+                </div><!-- /nav-collapse -->                                
+            </div><!-- /navbar-inner -->
+        </div><!-- /navbar -->                          
+    </div><!-- /container -->               
+</div><!--/header -->      
+<!--=== End Header ===-->
+
+<!--=== Content Part ===-->
+
+<div class="row-fluid bg-white uinfo-panels">
+	<div class="container pagination-centered" id="uinfo-headline-container">
+		<div class="headline"><h1>Extremely Useful Information...You're Welcome!</h1></div>
+		<img src="assets/img/walking-aids.jpg" />
+	</div>
+</div>
+
+<div class="row-fluid bg-blue uinfo-panels">
+	<div class="container pagination-centered uinfo-container">
+		<h3><span class="color-green">Congratulations!</span> <span class="color-black">You've bought some data. Clearly you are now on your way to fulfilling the demands of today's consumer. So...what now?</span></h3>
+		<p>Data is a relatively new concept, and so once the initial thrill of buying all your lovely new data is over, the realisation that you have no idea what to do next hits many like a ton of bricks.</p>
+		<p>To avoid this, take a look at our free tips and advice. I'm afraid we haven't included everything - we save all the best stuff for our customers!</p>
+	</div>
+</div>
+
+<div class="row-fluid bg-white uinfo-panels">
+	<div class="container pagination-centered uinfo-container">
+		<h2 class="color-green">How to start using data to your advantage</h2>
+		<h3><span class="color-green">Step 1:</span><span class="color-black"> Make sure it's the right data.</span></h3>
+		<p>You're probably thinking "What? OF COURSE I'll buy the right data!" but it is shocking how often data is selected based on opinion, gut feeling, who companies want to sell to, instead of who actually spends money with them. Analysing your existing customer database will establish who your best-fit customers are and RightMarket (because we're brilliant) will profile this information to pull out more 'good fit' clients for you.</p>
+		<p>Buying the wrong data means your marketing is no more targeted than it was before, only now you're spending extra money on useless data. Try explaining that one to the boss!</p>
+	</div>
+</div>
+
+<div class="row-fluid bg-blue uinfo-panels">
+	<div class="container pagination-centered uinfo-container">
+		
+		<h3><span class="color-green">Step 2:</span><span class="color-black"> Find somewhere to put it.</span></h3>
+		<p>Reaching the right market and demanding their undivided attention is tough! Particularly today, with advertising seeping its way into each aspect of everyday life; consumers switch off. Marketing is a journey, and integrated marketing is the perfect way to take consumers on that journey, because it repeats and reinforces your message at many different times and during many different activities in consumers' lives - triggering awareness, interest, opinion, perception and action.</p>
+		
+		<div class="span12">
+		
+			<img src="assets/img/reaching-rm.jpg" />
+		</div>
+		
+	</div>
+</div>
+
+<div class="row-fluid bg-white uinfo-panels">	
+	<div class="container pagination-centered uinfo-container">
+		<h3><span class="color-green">Step 3:</span><span class="color-black"> &#8216;Tailor, Tailor, Tailor.&#8217; Should be &#8216;Tailor, Tailor, TAILOR.&#8217;</span></h3>
+		<p>One more time? TAILOR. When it comes to content it can be difficult to establish what's useful and what's useless. As marketers we want every piece of 'valuable' information on everything we produce; and while we may think our content is brilliant, amazing, a stroke of genius! (if we do say so ourselves), in reality consumers skim over most things they consider to be advertising. The trick is to get their attention instantly, and convince them that they NEED to hear what you have to say.</p>
+		<p>Why Would David, a young family man, want to hear about your new 2 seat sports car? Equally, why would Harry, a young bachelor, be interested in a deal on your most reliable people carrier?</p>
+		
+		<div class="row-fluid">
+			<ul class="thumbnails">
+				<li class="span4"><img src="assets/img/reveal-home.jpg"></li>
+				<li class="span4"><img src="assets/img/reveal-home.jpg"></li>
+				<li class="span4"><img src="assets/img/reveal-home.jpg"></li>
+			</ul>
+			
+			<p><strong style="color: #000000;">To make this step as painless as possible, visit <a href="#">RCI360</a> and check out Storefront! Download these <a href="#">handy instructions</a> to see how Storefront makes tailoring easy.</strong></p>
+		</div>
+		
+	</div>
+</div>
+
+<div class="row-fluid bg-blue uinfo-panels">
+	<div class="container pagination-centered uinfo-container">
+		<h2>Targeting</h2>
+		<p>Sometimes it feels like it would be easier to part (add something very difficult to part) than consumers with their hard earned cash 'to' Today consumers are joined at the hip with their hard earned cash. It's because people are getting less for more, and they know it.</p>
+		<p>Targeting reduces your costs while increasing the return on your marketing. In real life terms, you get more for less! That's more like it.</p>
+		<p>True targeting requires near enough the whole of your content to change dependant on the criteria of the consumer you are communicating with. Now, we're a real thoughtful bunch here at RightMarket, so we hate to think of you worrying about how to accomplish something so time consuming. So please, for us, visit <a href="#">RO1360's Storefront demo site</a> to see how fast and easy it can be! We've even got <a href="#" target="_blank">instructions</a> for you, so going through the demo will take up as little of your time as possible!</p>
+	</div>
+</div>
+
+<div class="row-fluid bg-white uinfo-panels">
+	<div class="container pagination-centered uinfo-container">
+		<h2>Personalisation</h2>
+		<p>Personalisationis an incredibly powerful marketing tool - in 2011 alone it generated 31.4% EXTRA revenue for those who used it! Not convinced? Here are some more great stats you can't ignore:</p>
+		<ul style="text-align: left;">
+			<li>A <a href="#">Marketing Sherpa test</a> showed personalised email achieved a 137% higher open rate and a 129% higher clickthrough rate</li>
+			<li>42% of people are more likely to read a direct mail piece if it addresses their unique needs</li>
+			<li>BMW generated $500,000 in revenue by personalising MMS messages to 1,200 customers in the US, improving conversions by 30%</li>
+			<li>Personalising marketing materials can increase response rates by 36%, </li>
+			<li>Personalising marketing materials can increase response time 34% </li>
+			<li>Personalising marketing materials can increase repeat orders by 46%.</li>
+			<li>Personalising marketing materials can Leading to an overall increase in profit and revenue of 30%!</li>
+			<li>Econsultancy's research showed that post-purchase loyalty programmes which contained personalised offers were one of the most important factors in encouraging repeat purchase. </li>
+		</ul>
+		<p>People hate to feel like a number! Personalisation helps them engage and form a relationship with your brand. Of course, personalisation has evolved since its inception, and getting consumers' attention takes far more than using their name; relevance is key. For a great example see this <a href="#" target="_blank">video.</a></p>
+	</div>
+</div>
+
+<div class="row-fluid bg-blue no-border-bottom">
+	<div class="container pagination-centered uinfo-container">
+		<h2>Print</h2>
+		<p>There were 16,500 printers in the UK in 2005, and as of April 2013 this has wasted away to 6,608! That's a loss of 61% of business! In recent years, to avoid bankkruptcy, printers take on jobs at cost(or even under)! However, there are 3,000 print businesses in the UK today that don't need to lower their prices in order to win business, because they have established a competitive advantage.</p>
+		<p><strong>Print is not a dying trade; in just 2 years Promotional print has exploded by an unbelievable 69%! Particularly Direct Mail. Of course, producing direct mail on its own is not enough to establish a competitive advantage.</strong></p>
+	</div>
+</div>
+
+
+
+<div class="equifax">
+<div class="container">
+	
+		<div class="row-fluid">
+			<span><img src="assets/img/equifax.png"></span>
+			<span>&nbsp;&nbsp;Data sourced from Equifax, the worldwide leader for consumer data.&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="" class="btn-u">GET STARTED</a></span>
+		</div>
+	
+	</div>
+</div>
+
+<!--=== Footer ===-->
+<div class="footer">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span3">
+                <!-- About -->
+		        <div class="headline"><h3>CONTACT INFO</h3></div>		
+				<ul class="unstyled">
+				<li>15b Hostmoor Avenue</li>
+				<li>March</li>
+				<li>Cambridgeshire</li>
+				<li>PE15 OAX</li>
+				<li>United Kingdom</li>
+				</ul>
+				
+				<p>e: <span class="color-grey">sales@rightmarket.com</span></p>
+			</div><!--/span4-->	
+			
+			<div class="span3">
+				<div class="headline"><h3>NAVIGATION</h3></div>
+				<ul class="unstyled">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Application</a></li>
+				<li><a href="#">Data</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
+				</ul>
+			</div><!--/span4-->
+
+			<div class="span3">
+				<div class="headline"><h3>HELP &amp; ADVICE</h3></div>
+				<ul class="unstyled">
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">Acceptable Use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Cookies</a></li>
+				</ul>
+			</div><!--/span3-->
+			
+			<div class="span3">
+				<div class="headline"><h3>NEWSLETTER</h3></div>
+				<p>Register your interest and receive our newsletter</p>
+				<form class="form-inline">
+				<div class="input-append">
+					<input type="text" placeholder="Your email address" class="input-medium">
+					<button class="btn-u">Subscribe</button>
+				</div>
+				</form>			
+			</div><!--/span3-->
+			
+		</div><!--/row-fluid-->	
+	</div><!--/container-->	
+</div><!--/footer-->	
+<!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+	<div class="container">
+		<div class="row-fluid">
+
+			<div class="span8">						
+	            <p>&copy; 2013 <span class="color-green">ROI Marketing Solutions Limited</span>. All Rights Reserved.</p>
+			</div>
+			<div class="span4">	
+				<ul class="social-icons">
+                    <li><a href="#" data-original-title="Twitter" class="social_twitter">Follow us on Twitter</a></li>
+                </ul>
+			</div>
+		</div><!--/row-fluid-->
+	</div><!--/container-->	
+</div><!--/copyright-->	
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>        
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- JS Page Level -->           
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        
+		handleLogin();
+		
+		function handleLogin() {    
+			jQuery('.login').click(function () {
+				if(jQuery('.login-btn').hasClass('icon-login')){
+					jQuery('.login-open').fadeIn(500);
+					jQuery('.login-btn').removeClass('icon-login');
+					jQuery('.login-btn').addClass('icon-remove');
+				} else {
+					jQuery('.login-open').fadeOut(500);
+					jQuery('.login-btn').addClass('icon-login');
+					jQuery('.login-btn').removeClass('icon-remove');
+				}   
+			}); 
+		}
+	
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/js/respond.js"></script>
+<![endif]-->
+
+</body>
+</html> 
