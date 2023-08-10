@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Get Location from JSON file</title>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			$.getJSON( "ajax/locations.json", function( data ) {
+				var items = [];
+				var itemsString;
+				
+				$.each( data, function( keystate, valstate ) {
+					items.push( "<h4>" + keystate + "</h4>" );
+
+					$.each( valstate, function( keyloc, valloc ) {
+						itemsString = "<div class='row' id='"+ valstate[keyloc].locode +"'>";
+						itemsString += "<div class='col-md-6 col-location'>";
+						itemsString += "<h5>"+ valstate[keyloc].branch +"</h5>";	
+						itemsString += "<address>";
+						itemsString += "<p>"+ valstate[keyloc].street +"</p>";	
+						itemsString += "<p>"+ valstate[keyloc].city + ", " + valstate[keyloc].state + " " + valstate[keyloc].postcode +"</p>";	
+						itemsString += "<p>"+ valstate[keyloc].country +"</p>";
+						itemsString += "<p>Tel: "+ valstate[keyloc].tel +"</p>";
+						itemsString += "<p>Fax: "+ valstate[keyloc].fax +"</p>";
+						itemsString += "</address>";
+						itemsString += "</div>";
+						itemsString += "<div class='col-md-6 col-changeloc'>";
+              			itemsString += "<button class='btn btn-changeloc' type='button'>MAKE THIS YOUR STORE</button>";
+          				itemsString += "</div>"
+						itemsString += "</div>";		
+
+						items.push( itemsString );
+
+					});
+
+				});
+
+				$( "<div/>", {"class": "my-new-list",html: items.join( "" )}).appendTo( ".modal-body" );
+			});
+
+		
+		});
+	</script>
+
+ </head>
+
+ <body>
+
+ 	<div class="modal-body">
+ 	</div>
+
+ </body>
+</html>

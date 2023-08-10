@@ -1,0 +1,466 @@
+/*--------------------------------reset margins and paddings css----------------------------*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+
+
+/*--------------------------------reset h1, h2, h3, h4, h5 css----------------------------*/
+
+/*---------------------------------------set focus to none css----------------------------*/
+*:focus { 
+	outline: none; 
+}
+
+
+
+/*---------------------------------------clear css----------------------------*/
+.clear{
+	clear:both;
+}
+
+img{
+	border:none;
+}
+
+/*---------------------------------------clearfix css----------------------------*/
+div.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+div.clearfix {
+	display: inline-block;
+}
+* html .clearfix{
+	height: 1%;
+}
+div.clearfix {
+	display: block;
+}
+
+/*-------------------------------- invisible ----------------------------*/
+.invisible{ display:none; }
+p { line-height: 18px; text-align:justify; /*margin: 0 0 18px 0;*/ }
+
+a{ text-decoration: none; }
+ul li{ list-style: none; }
+ol{ margin: 0 0 10px 20px; }
+ol li{ margin: 0 0 8px 0; }
+fieldset{ border:0; }
+
+.invisible{ display: none; }
+
+/*--------------------------------fonts css----------------------------*/
+
+@font-face {
+	font-family: 'Conv_corbel';
+	src: url('fonts/corbel.eot');
+	src: url('fonts/corbel.woff') format('woff'), 
+		 url('fonts/corbel.ttf') format('truetype'), 
+		 url('fonts/corbel.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('fonts/proximanova-regular_0-webfont.eot');
+    src: url('fonts/proximanova-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-regular_0-webfont.woff') format('woff'),
+         url('fonts/proximanova-regular_0-webfont.ttf') format('truetype'),
+         url('fonts/proximanova-regular_0-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Hand_Of_Sean';
+	src: url('fonts/Hand_Of_Sean.eot');
+	src: url('fonts/Hand_Of_Sean.woff') format('woff'), 
+	     url('fonts/Hand_Of_Sean.ttf') format('truetype'), 
+		 url('fonts/Hand_Of_Sean.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+.content-wrapper{
+	width: 969px; 
+	margin:auto;
+}
+
+.breadcrumbs{
+	width: 969px; 
+	color:#524941;
+	font: 11px "Arial";
+}
+
+.breadcrumbs a{ color:#524941; text-decoration:underline; }
+
+.content-container{
+	width: 969px; 
+}
+
+.content-container h1{
+	display:block;
+	margin:15px 0;
+	font: 24px 'Conv_corbel';
+	color:#524941;	
+}
+
+/*----------upload entry panel ----------*/
+
+.upload-entry-wrapper{
+	width: 969px; 
+	height:100px;
+    position:relative;
+	background: #F9C5F8;
+	border:1px solid #F5A7F3;
+}
+
+.upload-entry-wrapper h3{ 
+    position:absolute; 
+    top:23px;
+    left:28px;
+    display:block; 
+    width: 577px;
+    height: 46px; 
+	color: #C900CF;
+	font: 28px "Conv_Hand_Of_Sean";
+}
+
+.upload-entry-wrapper a#upload-entry-link{ 
+    position:absolute;
+    top: 25px;
+    right:24px;
+    display:block;
+	cursor:pointer; 
+    width:201px;
+    height: 35px;
+    padding: 15px 0 0 15px;
+    color: #fff;
+    font: bold 16px 'proxima_nova_rgregular'; 
+    background: url(../images/upload-entry-bg.png) 0 0 no-repeat; 
+}
+
+
+/*----------------------------------- home --------------------------------------*/
+
+
+/*---------------- months winner ----------------------*/
+
+.content-container .month-winner-wrapper{ margin-bottom:30px; }
+
+.month-winner-wrapper .leftcol{ 
+	float:left; 
+	width:630px;
+	height:340px;
+	border: 1px solid #E9E9E5;
+}
+.month-winner-wrapper .rightcol{ 
+	float:right; 
+	width:328px;
+	height:320px;
+	padding: 10px 0;
+	background: url(../images/boxgrey.png) 0 0 no-repeat;
+}
+
+.month-winner-wrapper .rightcol .rightcol-container{ width: 298px; height:320px; margin: auto; }
+.month-winner-wrapper .rightcol .rightcol-container h3{
+	margin-bottom:10px; 
+	font: 18px 'Conv_Hand_Of_Sean'; 
+	color:#D402D5;
+}
+
+.month-winner-wrapper .rightcol .winner-info-wrapper .avatar{ float:left; }
+
+.winner-info-wrapper .avatar{
+	position:relative;
+	float: left;
+	width: 140px;
+	height: 126px;
+	background:url(../images/avatar-bg.png) 0 0 no-repeat;	
+}
+
+.winner-info-wrapper .avatar img{
+	position:absolute;
+	top: 15px;
+	left:20px;
+}
+
+.winner-info-wrapper .info{
+	float: left;
+	width:145px;
+	margin-left:10px;
+	height: 126px;
+	color: #29491E;
+	font-family: "Arial"; 
+}
+
+.winner-info-wrapper .info h5{
+	margin-bottom:5px;
+	font: 17px "Arial";
+	color:#29491E;
+	font-style:normal;
+        
+}
+
+.winner-info-wrapper .info p{ font-size: 14px; }
+
+.past-winners-wrapper .heading-wrapper{ padding-bottom: 3px; margin:10px 0; border-bottom: 1px dotted #999999; }
+.past-winners-wrapper .heading-wrapper h4{ float:left; display:block; font: 14px "Conv_Hand_Of_Sean"; color:#30abe7; }
+.past-winners-wrapper .heading-wrapper a#view-all-link{ float:right; display:block; padding-top:8px; font: 11px "Arial"; color:#524941; }
+
+.past-winners-wrapper .avatar{ 
+	position:relative; 
+	float:left; 
+	margin-right:5px;
+	width:96px; 
+	height:103px;
+	background: url(../images/avatar-bg-3.png) 0 0 no-repeat; 
+}
+
+.past-winners-wrapper .avatar img{ position:absolute; top:15px; left:10px; }
+.past-winners-wrapper .avatar p{ position:absolute; bottom:0; display:block; width:96px; font: 11px "Arial"; color: #524941; text-align:center; }
+
+.past-winners-wrapper .last{ margin-right:0px; }
+
+
+/*---------------- colouring sheets ----------------------*/
+
+.colouring-sheets-entries-wrapper{ margin: 25px 0; }
+.colouring-sheets-entries-wrapper .leftcol{ 
+	float:left; 
+	width: 630px; 
+	height:453px; 
+}
+
+.colouring-sheets-entries-wrapper .leftcol .heading-wrapper{
+	height:66px;
+	padding-left:80px;
+	background: url(../images/icons/girl.png) 0 50% no-repeat;	
+}
+
+.colouring-sheets-entries-wrapper .leftcol h3{ font: 24px "Arial"; color: #524941; }
+.colouring-sheets-entries-wrapper .leftcol h5{ 
+	display:block;
+	padding-bottom:12px;
+	font: 13px "Arial"; 
+	font-style:normal; 
+	color: #666666; 
+	background: url(../images/border-line.png) 0 100% no-repeat;
+}
+
+.colouring-sheets-entries-wrapper .sheets-wrapper{ margin: 25px 0; }
+.colouring-sheets-entries-wrapper .sheets-wrapper .last{ margin-right:0px; }
+
+.colouring-sheets-entries-wrapper .sheets-container{ 
+	float:left; 
+	margin:0 16px 25px 0;
+	width: 198px; 
+	height: 172px; 
+	background:url(../images/boxwhite.png) 0 0 no-repeat;
+}
+
+.colouring-sheets-entries-wrapper .sheets-holder{ 
+	position: relative; 
+	width: 180px; 
+	height: 154px; 
+	margin: 8px auto; 
+	border:1px solid #E8E8E4; 
+}
+
+.colouring-sheets-entries-wrapper .sheets-holder img{ position:absolute; }
+.colouring-sheets-entries-wrapper .sheets-holder .dl-btn-wrapper{
+	position:absolute; 
+	bottom:0; 
+	display: block;
+	width: 180px; 
+	height: 36px;
+	background: url(../images/blue-bg-transparent.png) 0 0 no-repeat; 
+}
+
+.colouring-sheets-entries-wrapper .sheets-holder .dl-btn-wrapper a{ 
+	display: block;
+	padding: 5px 0 5px 15px; 
+	width: 97px;
+	margin: 6px auto;
+	color: #fff;
+	font: bold 14px 'proxima_nova_rgregular';
+	background: #30ABE7; 
+}
+
+.colouring-sheets-entries-wrapper .rightcol{ 
+	float:right; 
+	width: 328px; 
+	height:446px;
+}
+
+.colouring-sheets-entries-wrapper .rightcol .heading-wrapper{ 
+	padding-bottom:8px; 
+	margin-bottom:15px; 
+	border-bottom: 1px dashed #999999; 
+}
+
+.colouring-sheets-entries-wrapper .rightcol .heading-wrapper h3{
+	float:left; 
+	color:#30ABE7;
+	font-style:normal;
+	font: 14px 'Conv_Hand_Of_Sean';
+	
+}
+
+.colouring-sheets-entries-wrapper .rightcol .heading-wrapper #all-entries-link{ 
+	float:right;
+	display:block;
+	padding-top: 7px;
+	color: #524941;
+	font: 11px "Arial";
+}
+
+.colouring-sheets-entries-wrapper .latest-entries-wrapper{ 
+	width: 328px; 
+	height: 390px; 
+	padding-top:12px; 
+	background: #E8E8E4; 
+}
+
+.colouring-sheets-entries-wrapper .latest-entries-container{ 
+	width: 300px; 
+	height: 375px; 
+	margin: auto; 
+}
+
+.latest-entries-wrapper .entries-wrapper{ 
+	width: 300px;
+	height: 108px;
+	margin:0 0 5px 0;
+}
+
+.latest-entries-wrapper .entries-wrapper .avatar{ 
+	float:left;
+	position:relative;
+	width: 122px;
+	height: 108px;
+	background:url(../images/avatar-bg-2.png) 0 0 no-repeat;	
+}
+
+.latest-entries-wrapper .entries-wrapper .avatar img{ position:absolute; top:5px; left:8px; }
+
+.latest-entries-wrapper .entries-wrapper .info{ 
+	float:right;
+	width: 170px;
+	height: 108px; 
+}
+
+.latest-entries-container .entries-wrapper .info h5{
+        margin-bottom:5px;
+	font: 16px "Arial";
+	color:#524941;
+	font-style:normal;
+        
+}
+
+.latest-entries-container .entries-wrapper .info p{ font:12px "Arial"; color:#524941; }
+
+.colouring-sheets-entries-wrapper #read-competition-link{ 
+	display: block; 
+	padding-top: 10px;
+	margin-top:15px; 
+	cursor: pointer; 
+	width: 328px; 
+	height:30px; 
+	color: #fff;
+	font: bold 13px "Arial";
+	text-align:center; 
+	background: #A19386; 
+}
+
+
+/*------------- enntries -----------------------*/
+
+.entries-wrapper .heading-wrapper{
+	height:66px;
+        margin: 25px 0;
+	padding-left:80px;
+	background: url(../images/icons/girl.png) 0 50% no-repeat;	
+}
+
+.entries-wrapper .heading-container{ width: 890px; padding-bottom:12px; background: url(../images/border.png) 0 100% repeat-x; }
+.entries-wrapper .heading-container h3{ font: 24px "Arial"; color: #524941; }
+.entries-wrapper .heading-container h5{ 
+	display:block;
+	font: 13px "Arial"; 
+	font-style:normal; 
+	color: #666666; 
+}
+
+.entries-container .last{ margin-right:0px; }
+.entries-container .tag{ background: url(../images/icons/tag.png) 99.9% 0 no-repeat;}
+
+.entries-holder{ 
+	float:left; 
+	width: 465px; 
+	height: 154px; 
+	padding: 5px; 
+	margin: 0 19px 15px 0; 
+	box-shadow: 0 2px 2px 1px #D4D4D4;
+}
+.entries-holder .avatar{ float:left; width: 180px; height: 154px; }
+.entries-holder .info{
+	float: left;
+	width:270px;
+	margin-left:10px;
+        padding-top:15px; 
+	height: 138px; 
+	color: #29491E;
+	font-family: "Arial"; 
+}
+
+.entries-holder .info h5{
+        
+	margin-bottom:5px;
+	font: 18px "Arial";
+	color:#29491E;
+	font-style:normal; 
+}
+
+.entries-holder .info p{ font: 14px "Arial"; color:#524941; }
+.entries-holder .info .view-image{ 
+	display: block; 
+	width: 134px; 
+	height: 18px; 
+	padding: 5px 0 0 22px; 
+	margin-top:30px; 
+	color: #fff; 
+	font: bold 11px 'proxima_nova_rgregular'; 
+	background: #30ABE7 url(../images/icons/view.png) 5px 50% no-repeat; 
+}
+
+/*--------------- entry form ---------------*/
+
+.ui-dialog.entrydialog{ width: 576px; height: 396px; padding: 0; margin:0; border:0; background: url(../images/entry-form-bg.png) 0 0 no-repeat;}
+.ui-dialog.entrydialog .ui-dialog-titlebar{ background: none; width:482px; top:16px; left:28px; border:0; } 
+.ui-dialog.entrydialog .ui-dialog-titlebar .ui-icon{ border-radius:0; border:0; width: 20px; height: 20px; background: url(../images/icons/close.png) 0 0 no-repeat;}
+.ui-dialog.entrydialog .ui-dialog-titlebar .ui-state-hover .ui-icon{ border:0; width: 20px; height: 20px; }
+.ui-dialog.entrydialog #entry-form-dialog form{ width: 432px; height: 254px; margin: 40px auto; }
+
+.ui-dialog.entrydialog .field{ width: 432px; margin-bottom: 10px; }
+.ui-dialog.entrydialog .field label{ display:inline-block; width:50px; font: 14px "Arial"; color: #524941; text-align:right; }
+.ui-dialog.entrydialog .field input.text{ padding: 5px; margin-left:22px; width: 340px; height: 26px; color: #524941; border:1px solid #ccc;  }
+.ui-dialog.entrydialog .field input.file{ margin-left:22px; width: 350px; color: #524941; font-size:16px; font-weight:normal;  }
+.ui-dialog.entrydialog .action-field{ position: relative; margin-top: 20px; font: 11px "Arial"; color: #524941; }
+.ui-dialog.entrydialog .action-field a{ display:block; padding-left: 22px; text-decoration:underline; }
+.ui-dialog.entrydialog .action-field .terms-condition{ position:absolute; left:75px; }
+.ui-dialog.entrydialog .action-field .action{ position:absolute; right:0; }
+.ui-dialog.entrydialog .action-field .action input{ border:0; width: 160px; height: 40px; cursor:pointer; color: #fff; background: #c900cf; font: bold 16px 'proxima_nova_rgregular'; }
+
+
+
+
+

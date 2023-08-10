@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Real Flame - Entries</title>
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery-fancybox.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+
+<script>
+    $(document).ready(function(){
+        
+		$( "#entry-form-dialog" ).dialog({
+			autoOpen: false,	
+			width: 576,
+			height: 396,
+			dialogClass: "entrydialog",
+		});
+		
+		$("#upload-entry-link").click(function(){
+			$( "#entry-form-dialog" ).dialog("open");
+		});
+		
+		$(".view-image").fancybox({ 
+		
+			padding: 2,
+			
+			openEffect : 'elastic',
+			openSpeed  : 250,
+			
+			closeEffect : 'elastic',
+			closeSpeed  : 250,
+			
+			prevEffect : 'fade',
+			prevSpeed  : 1000,
+			
+			nextEffect : 'fade',
+			nextSpeed  : 1000,
+			
+			closeClick : true,
+			
+			helpers : {
+				overlay : null
+			}
+		
+		});
+		
+		
+    });
+</script>
+
+    
+</head>
+
+<body>
+
+<div class="content-wrapper">
+
+    <div class="breadcrumbs">
+        You are here:  <a href="#">Home</a>  >  <a href="#">Colouring Contest</a>  
+    </div>
+    
+    <div class="content-container">
+        
+        <h1>Colouring Contest Entries</h1>
+        
+        <div class="upload-entry-wrapper">
+            <h3>Colour-in and win great prizes every month</h3>
+            <a id="upload-entry-link">UPLOAD YOUR ENTRY</a>
+        </div>
+        
+       
+        
+        <div class="entries-wrapper">
+        
+            <div class="heading-wrapper">
+                <div class="heading-container">
+                    <h3>Latest Entries</h3>
+                    <h5>Hope you have as much fun colouring in as we had creating it for you.</h5>
+                </div>
+            </div>
+            
+            <div class="entries-container clearfix">
+                
+                <div class="entries-holder clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                <div class="entries-holder last clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                <div class="entries-holder tag clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                <div class="entries-holder last clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                 <div class="entries-holder clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                 <div class="entries-holder last clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                 <div class="entries-holder clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                 <div class="entries-holder last tag clearfix">
+                    <div class="avatar"><img src="images/photo5.png" /></div>
+                    <div class="info">
+                        <h5>Georgia Matthews</h5>
+                        <p>Age: 8</p>
+                        <p>Suburb: Alexandria</p>
+                        <a class="view-image" href="images/large-photo.jpg">VIEW LARGE IMAGE</a>
+                    </div>
+                </div>
+                
+                
+            </div><!-- end of entries-container -->
+        
+        </div><!-- end of entries-wrapper -->
+        
+        
+    
+    </div><!-- end of content-container -->
+    
+    
+</div><!-- end of content-wrapper -->
+
+<div id="entry-form-dialog">
+
+    <form name="entry-form">
+    
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" class="text" />
+        </div>
+        
+        <div class="field">
+            <label>Age</label>
+            <input type="text" name="age" class="text" />
+        </div>
+        
+        <div class="field">
+            <label>Suburb</label>
+            <input type="text" name="suburb" class="text" />
+        </div>
+        
+        <div class="field">
+            <label>Entry</label>
+            <input type="file" name="entry" class="file" />
+        </div>
+        
+        <div class="action-field">
+            
+            <div class="terms-condition">
+                <input type="checkbox" name="terms-condition" class="checkbox" />
+                <label>I have read the Competitions <a href="#">Terms and Conditions</a></label>
+            </div>
+            
+            <div class="action">
+                <input type="submit" name="submit" value="SUBMIT" class="submit-btn" />
+            </div>
+            
+        </div>
+        
+        
+    </form>
+
+</div><!-- end of entry-form-dialog -->
+
+
+</body>
+</html>

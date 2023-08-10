@@ -1,0 +1,160 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	#subpage-content-wrapper .awc-diff .col-md-2{
+ 		width: 20%;
+ 	}
+
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#subpage-content-wrapper .awc-diff .col-md-2{
+ 		width: 20%;
+
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail .caption p{
+ 		font-size: 12px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h3{
+ 		font-size: 14px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h5{
+ 		bottom: 5%;
+ 	}
+
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#subpage-content-wrapper{
+
+		font-size: 20px;
+	}
+
+	#subpage-content-wrapper .awc-diff .col-md-2{
+ 		width: 20%;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h3{
+ 		font-size: 14px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail .caption p{
+ 		font-size: 11px; 
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h5{
+ 		width: 100%;
+ 		left: 0;
+ 		bottom: 0;
+ 	}
+
+ 	.navbar-nav > li > a{
+		font-size: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.banner-nav .list-inline > li > a{
+
+		font-size: 10px;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	#topbar .signin-register{
+
+		float: none !important;
+	}
+
+	.banner-nav .navbar{ 
+		z-index: 1000; 
+	}
+
+	.banner-nav .navbar-collapse{ 
+		background-color: #fff;
+		border:0;	
+	}
+
+	.banner-nav .navbar-collapse .navbar-nav > li > a{
+		color: #1D1D1B;
+	}
+
+	.banner-nav .navbar-collapse .navbar-nav > li > a:hover{
+		color: #1D1D1B;
+		text-decoration: underline;
+	}
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+	#topbar .signin-register{
+		float: none !important;
+	}
+
+	.banner-nav .navbar{ 
+		z-index: 1000; 
+	}
+
+	.banner-nav .navbar-collapse{ 
+		background-color: #fff;
+		border:0;	
+	}
+
+	.banner-nav .navbar-collapse .navbar-nav > li > a{
+		color: #1D1D1B;
+	}
+
+	.banner-nav .navbar-collapse .navbar-nav > li > a:hover{
+		color: #1D1D1B;
+		text-decoration: underline;
+	}
+
+	#subpage-content-wrapper{
+		font-size: 16px;
+	}
+
+	.banner-caption{
+		left:0;
+		right: 0;
+		z-index: 0;
+	}
+
+	.banner-caption h1{
+
+		font-size: 40px;
+	}
+
+	#subpage-content-wrapper .thumbnail h3{
+ 		font-size: 14px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h3{
+
+ 		margin-top: 10px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail .caption p{
+ 		font-size: 12px;
+ 	}
+
+ 	#subpage-content-wrapper .thumbnail h5{
+ 		width: 90%;
+		left: 5%;
+		right: 5%; 		
+ 		bottom: 5%;
+ 	}
+}

@@ -1,0 +1,47 @@
+{
+
+	"ALABAMA":[
+			{ "locode":"AL01","branch":"AWC - BIRMINGHAM" , "street":"1960 Chandalar Dr. Suite B" , "city":"Pelham" , "state":"AL" , "postcode":"35124","country":"USA","tel":"1.251.666.7050","fax":"1.251.666.0620"},
+			{ "locode":"AL02","branch":"AWC - MOBILE" , "street":"13711 Lakeside Court" , "city":"Mobile" , "state":"AL" , "postcode":"36693-5111","country":"USA","tel":"1.251.666.7050","fax":"1.251.666.0620"}
+		],
+	"FLORIDA":[
+			{ "locode":"FL01","branch":"AWC - FT LAUDERDALE" , "street":"2800 W. State Road 84 Suite 112" , "city":"Fort Lauderdale" , "state":"FL" , "postcode":"33312","country":"USA","tel":"1.954.584.1570","fax":"1.954.584.5246"},
+			{ "locode":"FL02","branch":"AWC - JACKSONVILLE" , "street":"5730 Bowden Road Suite 304" , "city":"Jacksonville" , "state":"FL" , "postcode":"32216","country":"USA","tel":"1.813.347.4507","fax":"1.813.347.4506"},
+			{ "locode":"FL03","branch":"AWC - ORLANDO" , "street":"385 Center Pointe Circle Suite 1305" , "city":"Altamonte Springs" , "state":"FL" , "postcode":"32701","country":"USA","tel":"1.321.207.0120","fax":"1.321.207.0739"},
+			{ "locode":"FL04","branch":"AWC - TAMPA" , "street":"3214 Queen Palm Drive Suite 100" , "city":"TAMPA" , "state":"FL" , "postcode":"33619","country":"USA","tel":"1.813.386.1023","fax":"1.813.676.7201"}
+		],
+	"GEORGIA":[
+			{ "locode":"GA01","branch":"AWC - ATLANTA" , "street":"593 Sigman Road NE Suite A" , "city":"Conyers" , "state":"GA" , "postcode":"30013","country":"USA","tel":"1.770.922.7225","fax":"1.770.922.7212"}
+		],
+	"LOUISIANA":[
+			{ "locode":"LA01","branch":"AWC - BATON ROUGE" , "street":"6655 Exchequer Drive" , "city":"Baton Rouge" , "state":"LA" , "postcode":"70809","country":"USA","tel":"1.225.752.1100","fax":"1.225.751.9029"},
+			{ "locode":"LA02","branch":"AWC - BR ELECTRICAL" , "street":"11511 Industriplex Blvd." , "city":"Baton Rouge" , "state":"LA" , "postcode":"70809","country":"USA","tel":"1.225.752.1105","fax":"1.225.755.6722"},
+			{ "locode":"LA03","branch":"AWC - BR FILTRATION SERVICES" , "street":"12020 Lakeland Park Blvd Suite 133" , "city":"Baton Rouge" , "state":"LA" , "postcode":"70809","country":"USA","tel":"1.225.752.1100","fax":"1.225.752.9029"},
+			{ "locode":"LA04","branch":"AWC - BR VALVE DIVISION" , "street":"6665 EXCHEQUER DR." , "city":"Baton Rouge" , "state":"LA" , "postcode":"70809","country":"USA","tel":"1.225.709.9909","fax":"1.225.751.9029"},
+			{ "locode":"LA05","branch":"AWC - CORPORATE" , "street":"6655 Exchequer Drive" , "city":"Baton Rouge" , "state":"LA" , "postcode":"70809-5148","country":"USA","tel":"1.225.752.3939","fax":"1.225.755.6723"},
+			{ "locode":"LA06","branch":"AWC - LAFAYETTE" , "street":"105 Tas Street Suite 102" , "city":"Scott" , "state":"LA" , "postcode":"70583","country":"USA","tel":"1.337.232.4788","fax":"1.337.232.8161"},
+			{ "locode":"LA07","branch":"AWC - LAKE CHARLES" , "street":"415 Walcot Road" , "city":"Westlake" , "state":"LA" , "postcode":"70669","country":"USA","tel":"1.337.882.6432","fax":"1.337.882.6621"},
+			{ "locode":"LA08","branch":"AWC - NEW ORLEANS" , "street":"120 Mallard Street Suite 220" , "city":"Saint Rose" , "state":"LA" , "postcode":"70087","country":"USA","tel":"1.504.733.9563","fax":"1.504.734.8635"},
+			{ "locode":"LA09","branch":"AWC - RUSTON" , "street":"2406 Kavanaugh Rd Suite D" , "city":"Ruston" , "state":"LA" , "postcode":"71270","country":"USA","tel":"1.318.202.3880","fax":"1.318.202.3878"}
+		],
+	"OKLAHOMA":[
+			{ "locode":"OK01","branch":"AWC - OKLAHOMA CITY" , "street":"5600 SW 36th Street Suite A" , "city":"Oklahoma City" , "state":"OK" , "postcode":"73179","country":"USA","tel":"1.405.601.1090","fax":"1.405.601.6798"}
+
+		],
+	"TENNESSEE":[
+			{ "locode":"TN01","branch":"AWC - MEMPHIS" , "street":"3111 Stage Post Rd , Suite 105" , "city":"Bartlett" , "state":"TN" , "postcode":"38133","country":"USA","tel":"1.901.323.9069","fax":"1.901.323.9072"}
+		],
+	"TEXAS":[
+			{ "locode":"TX01","branch":"AWC - AUSTIN" , "street":"1421 Wells Branch Pkwy Suite 300" , "city":"Pflugerville" , "state":"TX" , "postcode":"78660","country":"USA","tel":"1.512.832.5100","fax":"1.512.832.5655"},
+			{ "locode":"TX02","branch":"AWC - BEAUMONT" , "street":"3445 Phelan Blvd. Suite A" , "city":"Beaumont" , "state":"TX" , "postcode":"77707","country":"USA","tel":"1.409.842.3800","fax":"1.409.842.9200"},
+			{ "locode":"TX03","branch":"AWC - CORPUS CHRISTI" , "street":"5449 Bear Lane Suite 424" , "city":"Corpus Christi" , "state":"TX" , "postcode":"78405","country":"USA","tel":"1.361.884.4003","fax":"1.361.884.9253"},
+			{ "locode":"TX04","branch":"AWC - DALLAS" , "street":"10610 Newkirk St. Suite 100" , "city":"Dallas" , "state":"TX" , "postcode":"75220","country":"USA","tel":"1.972.247.5486","fax":"1.972.488.0076"},
+			{ "locode":"TX05","branch":"AWC - FORT WORTH" , "street":"301 North Beach Street" , "city":"Fort Worth" , "state":"TX" , "postcode":"76111","country":"USA","tel":"1.817.769.8469","fax":"1.682.224.2312"},
+			{ "locode":"TX06","branch":"AWC - FREEPORT" , "street":"5824 E. Highway 33" , "city":"Freeport" , "state":"TX" , "postcode":"77541","country":"USA","tel":"1.979.239.2051","fax":"1.979.239.2055"},
+			{ "locode":"TX07","branch":"AWC - HOUSTON" , "street":"4940 Timber Creek" , "city":"Houston" , "state":"TX" , "postcode":"77017","country":"USA","tel":"1.713.944.2100","fax":"1.713.944.8212"},
+			{ "locode":"TX08","branch":"AWC - MIDLAND" , "street":"13020 Highway 191 Unit L" , "city":"Midland" , "state":"TX" , "postcode":"79707","country":"USA","tel":"0","fax":"0"},
+			{ "locode":"TX09","branch":"AWC - NW HOUSTON" , "street":"4747 S. Pinemont Suite 300" , "city":"Midland" , "state":"TX" , "postcode":"77041","country":"USA","tel":"1.832.553.9400","fax":"1.832.553.9499"},
+			{ "locode":"TX010","branch":"AWC - SAN ANTONIO" , "street":"10564 Sentinel Drive" , "city":"San Antonio" , "state":"TX" , "postcode":"78217","country":"USA","tel":"1.210.525.9200","fax":"1.210.525.9205"}
+		]
+
+}
